@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Variáveis de cores do site */
+$light-gray: #c7c7c7;
+$white: #e7e8e9;
+$medium-blue: #394e6d;
+$dark-gray: #1e1e1e;
+
+/* Mixin para deixar a página responsiva.*/
+@mixin for-phone-only {
+    @media (min-width: 375px) and (max-width: 540px) { @content; }
+}
+
+@mixin for-tablet-only {
+    @media (min-width: 541px) and (max-width: 999px) { @content; }
+}
+
+/* Importa os outros arquivos de estilização da página */
+@import 'header', 'about', 'skills', 'portfolio', 'button'; 
+
+html,body {
+    font-family: 'Roboto', serif;
+    scroll-behavior: smooth;
+    visibility: hidden;
+}   
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $dark-gray;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $medium-blue;
+    border-radius: 30px;
+    visibility: visible;
+}
+
+.main {
+    text-align: center;
+    
+    &__content {
+        position: relative;
+    }
+
+    &__tittle {
+        font-size: 3rem;
+        color: $light-gray;
+        margin-top: -30rem;
+        white-space: nowrap;
+
+        @include for-phone-only {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0%)
+        }
+    } 
+
+    &__effect {
+        font-weight: 500;
+        font-size: 1.8rem;
+        padding: 1rem;
+        color: $light-gray;
+    }
+
+    &__social {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+
+        @include for-phone-only {
+            transform: translate(-2%, -320%)
+        } 
+    }
+
+    &__github, &__codepen, &__linkedin, &__instagram {
+        width: 4.5rem;
+        margin-top: 2rem;
+        padding: 1rem; 
+        border-radius: 1.8rem;
+
+        @include for-phone-only {
+            width: 3rem;
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 0.9rem;
+    background-color: $light-gray;
+}

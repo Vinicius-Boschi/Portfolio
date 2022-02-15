@@ -1,0 +1,92 @@
+.portfolio {
+    
+    &__container {
+        background-color: $dark-gray;
+        height: auto;
+        padding: 1rem;
+    }
+
+    &__h2 {
+        text-align: center;
+        font-size: 1.8rem;
+        color: $white;
+        padding-top: 1rem;
+    }
+
+    &__projects {
+        display: grid;
+        align-items: center;
+        grid-template-areas: 
+        "portfolio__img";
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1.5rem 2.5rem;
+
+       @include for-phone-only {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 1rem;
+        }
+
+        @include for-tablet-only {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 1rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__img {
+        border-radius: .5rem;    
+        box-shadow: 0 0.3rem 0.6rem $dark-gray;
+        border: 1px solid $white;
+        width: 180%;
+        transition: 1s;
+        
+        &:hover {
+            box-shadow: 5px 5px $white;
+            transform: translateY(-10px) scale(1);
+        }
+
+        @include for-tablet-only {
+            width: 110%;
+        }
+    }
+
+    &__text {
+        color: $white;
+        font-size: 1.2rem;
+        padding-top: 1rem;
+        text-transform: capitalize;
+
+        @include for-phone-only {
+            font-size: 1rem;
+        }
+    }
+
+    &__load {
+        display: flex;
+        background: $medium-blue;
+        border: 2px solid $white;
+        border-radius: 5px;
+        color: $white;
+        width: 5%;
+        padding: .3rem;
+        margin: 0 auto;
+        transition: 1s;
+        
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0.5rem 0.5rem -0.4rem $medium-blue;
+            transform: translateY(-0.50em);
+        }
+
+        @include for-phone-only {
+            width: auto;
+        }
+
+        @include for-tablet-only {
+            width: auto;
+        }
+    }
+}

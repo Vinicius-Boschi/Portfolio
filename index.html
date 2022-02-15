@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/dotty/80/000000/portfolio.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio Vinícius Boschi</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__overlay">
+            <div class="header__container">
+                <nav class="header__navbar" id="active" role="navigation">
+                    <ul class="header__list">
+                        <li class="header__links">
+                            <a class="header__link" href="#about">Sobre</a>
+                        </li>
+                        <li class="header__links">
+                            <a class="header__link" href="#skills">Habilidades</a>
+                        </li>
+                        <li class="header__links">
+                            <a class="header__link" href="#portfolio">Projetos</a>
+                        </li>
+                        <li class="header__links">
+                            <a href="#" class="header__link icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                              </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__content">
+            <div class="main__tittle">
+                <h1>Vinícius Boschi</h1>
+                <h3 class="main__effect">Front-end Developer.</h3>
+            </div>
+            <ul class="main__social">
+                <li>
+                    <a class="main__btn" href="https://github.com/Vinicius-Boschi" target="_blank">
+                        <img class="main__github" src="images/github.svg" alt="icon-github">
+                    </a>
+                </li>
+                <li>
+                    <a class="main__btn" href="https://codepen.io/vinicius-simoes" target="_blank">
+                        <img class="main__codepen" src="images/codepen.png" alt="icon-codepen">
+                    </a>
+                </li>
+                <li>
+                    <a class="main__btn" href="https://www.instagram.com/vinicius_boschi/?hl=pt-br" target="_blank">
+                        <img class="main__instagram" src="images/instagram.svg" alt="icon-instagram">
+                    </a>
+                </li>
+                <li>
+                    <a class="main__btn" href="https://www.linkedin.com/in/viniciusboschi/" target="_blank">
+                        <img class="main__linkedin" src="images/linkedin.png" alt="icon-linkedin">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+		<section id="about">
+			<div class="about__container">
+                <div class="about__h2">
+                    <h2>Sobre mim...</h2>
+                </div>
+
+				<div class="about__info">
+                    <div class="about__my">
+                        <img class="about__picture" src="images/aboutMe.png" alt="myphoto">
+                        <p class="about__text"> 
+                            Olá! Sou o Vinícius, tenho 20 anos, sou programador front-end e estou determinado a aprender cada vez mais sobre a área para me tornar um excelente profissional. 
+                        </p> 
+                        <p class="about__text">
+                            Comecei na área da programação em 2018, fazendo um curso de Lógica de Programação na Caelum, em 2019 entrei no curso técnico e em 2021 comecei a fazer os cursos da Alura.
+                        </p>
+                    </div>
+				</div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="skills__container">
+                <h2 class="skills__skills">Habilidades</h2>
+                    <div class="skills__list">
+                        <h2 class="skills__stack">Front-End</h2>
+                        
+                        <div class="skills__badges">
+                            <h3 class="skills__name">HTML5
+                                <img class="skills__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                            </h3>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+
+                        <div class="skills__bar">
+                            <span class="skills__html skills__percentage--bar"></span>
+                        </div>
+
+                        <div class="skills__badges">
+                            <h3 class="skills__name">Css3
+                                <img class="skills__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                            </h3>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+
+                        <div class="skills__bar">
+                            <span class="skills__css skills__percentage--bar"></span>
+                        </div>
+
+                        <div class="skills__badges">
+                            <h3 class="skills__name">JavaScript
+                                <img class="skills__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg">
+                            </h3>
+                            <span class="skills__percentage">40%</span>
+                        </div>
+
+                        <div class="skills__bar">
+                            <span class="skills__js skills__percentage--bar"></span>
+                        </div>
+                        
+                        <div class="skills__badges">
+                            <h3 class="skills__name">Sass
+                                <img class="skills__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg">
+                            </h3>
+                            <span class="skills__percentage">75%</span>
+                        </div>
+
+                        <div class="skills__bar">
+                            <span class="skills__sass skills__percentage--bar"></span>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+		<section id="portfolio">
+            <div class="portfolio__container">
+                <div class="portfolio__h2">
+                    <h2>Projetos Online</h2>
+                </div>
+                    <div class="portfolio__projects"></div>
+                    <button class="portfolio__load" onclick="load()">Ver mais</button>
+			</div>
+        </section>
+
+        <a href="index.html" class="btn show"></a> 
+
+        <footer class="footer"> Todos os direitos reservados © 2022 </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

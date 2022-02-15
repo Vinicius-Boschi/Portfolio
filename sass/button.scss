@@ -1,0 +1,33 @@
+.btn {
+    display: inline-block;
+    background-color: $medium-blue;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+
+    &::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-size: 2em; 
+        line-height: 50px;
+        color: $white;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: $dark-gray;
+    }
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}

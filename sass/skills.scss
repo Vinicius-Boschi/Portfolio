@@ -1,0 +1,119 @@
+.skills {
+    
+    &__container {
+        background: #1e1e1eea; 
+        font-size: 1.8rem;
+        padding: 2rem;
+        height: 30rem;
+
+        @include for-phone-only {
+            font-size: 1.2rem;
+            height: 38rem;
+            padding: 0;
+        }
+
+        @include for-tablet-only {
+            font-size: 1.2rem;
+            height: 42rem;
+            padding: 0;
+        }
+    }
+
+    &__skills {
+        text-align: center;
+        color: $white;
+        font-size: 1.8rem;
+        padding-top: 1rem;
+    }
+
+    &__list {
+        background-color: $dark-gray;
+        margin: 4rem;
+        width: 40%;
+        height: 80%;
+        border-radius: .6rem;
+        transform: translate(64%, -8%);
+
+        @include for-phone-only {
+            width: auto;
+            height: 60%;
+            transform: translate(0%);
+        }
+
+        @include for-tablet-only {
+            width: 50%;
+            height: 55%;
+            transform: translate(30%);
+        }
+    }
+
+    &__stack {
+        color: $white;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+
+    &__badges {
+        display: flex;
+        border-radius: 5%;
+        color: $white;
+        padding: 1rem;
+    }
+    
+    &__img {
+        width: 10%;
+        vertical-align: middle;
+    }
+
+    &__percentage {
+        font-size: 1.2rem;
+        margin-left: 10rem;
+
+        @include for-phone-only {
+            margin: auto;
+        }
+
+        @include for-tablet-only {
+            margin: auto;
+        }
+    }
+
+    &__bar {
+        background-color: $light-gray;
+        height: 5px;
+        border-radius: 5px;
+    }
+
+    &__percentage--bar {
+        height: 5px;
+    }
+
+    &__html {
+        display: block;
+        background-color: #E44F25;
+        width: 85%;
+        border-radius: 5px;
+    }
+
+    &__css {
+        display: block;
+        background-color: #0072BD;
+        width: 80%;
+        border-radius: 5px;
+    }
+
+    &__js {
+        display: block;
+        background-color: #EAD41C;
+        width: 40%;
+        border-radius: 5px;
+    }
+
+    &__sass {
+        display: block;
+        background-color: #CE679A;
+        width: 75%;
+        border-radius: 5px;
+    }
+}
