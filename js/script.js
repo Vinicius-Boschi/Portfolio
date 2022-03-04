@@ -68,11 +68,15 @@ function myFunction() { // Função que faz a navbar funcionar o botão na respo
   }
 }
 
-/* A página carrega conforme o tempo é definido aqui. */
+/* A página carrega conforme vai descendo a página.*/
 
-ScrollReveal().reveal('.header', { delay: 1000 })
-ScrollReveal().reveal('.main', { delay: 1300 })
-ScrollReveal().reveal('#about', { delay: 1400 })
-ScrollReveal().reveal('#skills', { delay: 1400 })
-ScrollReveal().reveal('#portfolio', { delay: 1400 })
-ScrollReveal().reveal('.footer', { delay: 1400 })
+let nodeArray = [
+  document.querySelector('.header'),
+  document.querySelector('.main'),
+  document.querySelector('#about'),
+  document.querySelector('#skills'),
+  document.querySelector('#portfolio'),
+  document.querySelector('.footer')
+]
+
+ScrollReveal().reveal(nodeArray)

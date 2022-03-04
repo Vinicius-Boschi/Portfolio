@@ -57,11 +57,12 @@
 
         &.icon {
             display: none;
+            
         }
 
         @include for-phone-only {
             display: none;
-
+            
             &.icon {
                 float: left;
                 display: block;

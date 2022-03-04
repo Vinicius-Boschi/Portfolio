@@ -197,20 +197,6 @@
   width: 10%;
   vertical-align: middle;
 }
-.skills__percentage {
-  font-size: 1.2rem;
-  margin-left: 10rem;
-}
-@media (min-width: 375px) and (max-width: 540px) {
-  .skills__percentage {
-    margin: auto;
-  }
-}
-@media (min-width: 541px) and (max-width: 999px) {
-  .skills__percentage {
-    margin: auto;
-  }
-}
 .skills__bar {
   background-color: #c7c7c7;
   height: 5px;
@@ -365,6 +351,7 @@
 html, body {
   font-family: "Roboto", serif;
   scroll-behavior: smooth;
+  visibility: hidden;
 }
 
 ::-webkit-scrollbar {
