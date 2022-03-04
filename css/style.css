@@ -351,7 +351,6 @@
 html, body {
   font-family: "Roboto", serif;
   scroll-behavior: smooth;
-  visibility: hidden;
 }
 
 ::-webkit-scrollbar {
