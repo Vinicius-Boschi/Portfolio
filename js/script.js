@@ -67,16 +67,3 @@ function myFunction() { // Função que faz a navbar funcionar o botão na respo
     x.className = "header__navbar"
   }
 }
-
-/* A página carrega conforme vai descendo a página.*/
-
-let nodeArray = [
-  document.querySelector('.header'),
-  document.querySelector('.main'),
-  document.querySelector('#about'),
-  document.querySelector('#skills'),
-  document.querySelector('#portfolio'),
-  document.querySelector('.footer')
-]
-
-ScrollReveal().reveal(nodeArray)
