@@ -331,6 +331,7 @@
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
+  z-index: 1;
 }
 .btn::after {
   content: "\f077";
@@ -394,14 +395,17 @@ html, body {
   color: #c7c7c7;
 }
 .main__social {
-  list-style-type: none;
   display: flex;
   justify-content: center;
+  transition: all 0.3s;
 }
 @media (min-width: 375px) and (max-width: 540px) {
   .main__social {
     transform: translate(-2%, -320%);
   }
+}
+.main__social :hover {
+  transform: scale(1.1);
 }
 .main__github, .main__codepen, .main__linkedin, .main__instagram {
   width: 4.5rem;
