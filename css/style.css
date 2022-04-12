@@ -407,14 +407,14 @@ html, body {
 .main__social :hover {
   transform: scale(1.1);
 }
-.main__github, .main__codepen, .main__linkedin, .main__instagram {
+.main__github, .main__codepen, .main__linkedin, .main__email {
   width: 4.5rem;
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 1.8rem;
 }
 @media (min-width: 375px) and (max-width: 540px) {
-  .main__github, .main__codepen, .main__linkedin, .main__instagram {
+  .main__github, .main__codepen, .main__linkedin, .main__email {
     width: 3rem;
   }
 }
