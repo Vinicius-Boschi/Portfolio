@@ -8,7 +8,7 @@
 O objetivo deste site é conter todas as informações sobre mim, como, redes socias, projetos, sobre mim.
 
 2. Seção Inicial<br><br>
-<img src="images/home.jpg" alt="Seção 1"> 
+<img src="images/projects/home.jpg" alt="Seção 1"> 
 
 3. Tecnologia usadas: <br>
 

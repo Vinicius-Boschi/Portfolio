@@ -31,9 +31,9 @@ let projects = [
     },
   
     {
-      link: "https://visitcards.netlify.app/",
-      image: "images/projects/nlw-heat.jpg",
-      text: "cartão"
+      link: "https://buscarceps.netlify.app/",
+      image: "images/projects/cep.jpg",
+      text: "buscar cep"
     },
   
     {
