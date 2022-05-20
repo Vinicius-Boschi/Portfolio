@@ -1,5 +1,5 @@
 .skills {
-    background: #1e1e1eea; 
+    background: $light-gray; 
     height: 25rem;
 
     @include for-phone-only {

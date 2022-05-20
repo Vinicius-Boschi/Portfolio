@@ -71,7 +71,7 @@
         border-radius: 5px;
         color: $white;
         width: 5%;
-        padding: .3rem;
+        padding: .5rem;
         margin: 0 auto;
         transition: 1s;
         
@@ -79,6 +79,7 @@
             cursor: pointer;
             box-shadow: 0 0.5rem 0.5rem -0.4rem $medium-blue;
             transform: translateY(-0.50em);
+            background-color: $button-hover;
         }
 
         @include for-phone-only {

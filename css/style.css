@@ -21,7 +21,7 @@
 }
 .header__navbar {
   overflow: hidden;
-  background: #394e6d;
+  background: #394E6D;
 }
 @media (min-width: 375px) and (max-width: 540px) {
   .header__navbar {
@@ -43,15 +43,15 @@
 .header__link {
   float: left;
   display: block;
-  color: #e7e8e9;
+  color: #E7E8E9;
   padding: 1rem 1rem;
   text-decoration: none;
   font-size: 2rem;
 }
 .header__link:hover {
-  background-color: #e7e8e9;
+  background-color: #E7E8E9;
   border-radius: 0.3rem;
-  color: #1e1e1e;
+  color: #1E1E1E;
 }
 .header__link.icon {
   display: none;
@@ -67,7 +67,7 @@
 }
 
 .about__container {
-  background: #1e1e1e;
+  background: #1E1E1E;
   height: 33rem;
   margin-top: -6rem;
 }
@@ -84,7 +84,7 @@
 }
 .about__h2 {
   font-size: 1.8rem;
-  color: #e7e8e9;
+  color: #E7E8E9;
   margin-top: 20rem;
   padding: 1em 1.8em;
   text-align: center;
@@ -112,7 +112,7 @@
   display: inline;
   width: 40%;
   line-height: 2rem;
-  color: #e7e8e9;
+  color: #E7E8E9;
   font-size: 1.1rem;
   margin: 2rem 1rem -1rem;
   float: right;
@@ -129,7 +129,7 @@
 }
 
 .skills {
-  background: #1e1e1eea;
+  background: #1E1E1EEA;
   height: 25rem;
 }
 @media (min-width: 375px) and (max-width: 540px) {
@@ -161,7 +161,7 @@
 }
 .skills__skills {
   text-align: center;
-  color: #e7e8e9;
+  color: #E7E8E9;
   font-size: 1.8rem;
   padding-top: 3rem;
 }
@@ -172,7 +172,7 @@
   margin: 0 auto;
 }
 .skills__experience {
-  color: #e7e8e9;
+  color: #E7E8E9;
   text-align: center;
   padding: 1rem;
   font-size: 1.8rem;
@@ -187,14 +187,14 @@
 }
 
 .portfolio__container {
-  background-color: #1e1e1e;
+  background-color: #1E1E1E;
   height: auto;
   padding: 1rem;
 }
 .portfolio__h2 {
   text-align: center;
   font-size: 1.8rem;
-  color: #e7e8e9;
+  color: #E7E8E9;
   padding-top: 1rem;
 }
 .portfolio__projects {
@@ -221,13 +221,13 @@
 }
 .portfolio__img {
   border-radius: 0.5rem;
-  box-shadow: 0 0.3rem 0.6rem #1e1e1e;
-  border: 1px solid #e7e8e9;
+  box-shadow: 0 0.3rem 0.6rem #1E1E1E;
+  border: 1px solid #E7E8E9;
   width: 180%;
   transition: 1s;
 }
 .portfolio__img:hover {
-  box-shadow: 5px 5px #e7e8e9;
+  box-shadow: 5px 5px #E7E8E9;
   transform: translateY(-10px) scale(1);
 }
 @media (min-width: 541px) and (max-width: 999px) {
@@ -236,7 +236,7 @@
   }
 }
 .portfolio__text {
-  color: #e7e8e9;
+  color: #E7E8E9;
   font-size: 1.2rem;
   padding-top: 1rem;
   text-transform: capitalize;
@@ -248,19 +248,20 @@
 }
 .portfolio__load {
   display: flex;
-  background: #394e6d;
-  border: 2px solid #e7e8e9;
+  background: #394E6D;
+  border: 2px solid #E7E8E9;
   border-radius: 5px;
-  color: #e7e8e9;
+  color: #E7E8E9;
   width: 5%;
-  padding: 0.3rem;
+  padding: 0.5rem;
   margin: 0 auto;
   transition: 1s;
 }
 .portfolio__load:hover {
   cursor: pointer;
-  box-shadow: 0 0.5rem 0.5rem -0.4rem #394e6d;
+  box-shadow: 0 0.5rem 0.5rem -0.4rem #394E6D;
   transform: translateY(-0.5em);
+  background-color: #1A293F;
 }
 @media (min-width: 375px) and (max-width: 540px) {
   .portfolio__load {
@@ -275,7 +276,7 @@
 
 .btn {
   display: inline-block;
-  background-color: #394e6d;
+  background-color: #394E6D;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -294,11 +295,11 @@
   font-family: FontAwesome;
   font-size: 2em;
   line-height: 50px;
-  color: #e7e8e9;
+  color: #E7E8E9;
 }
 .btn:hover {
   cursor: pointer;
-  background-color: #1e1e1e;
+  background-color: #1A293F;
 }
 .btn.show {
   opacity: 1;
@@ -315,12 +316,12 @@ html, body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e1e1e;
+  background: #1E1E1EEA;
   border-radius: 30px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #394e6d;
+  background: #394E6D;
   border-radius: 30px;
   visibility: visible;
 }
@@ -333,7 +334,7 @@ html, body {
 }
 .main__tittle {
   font-size: 3rem;
-  color: #c7c7c7;
+  color: #E7E8E9;
   margin-top: -30rem;
   white-space: nowrap;
 }
@@ -348,7 +349,7 @@ html, body {
   font-weight: 500;
   font-size: 1.8rem;
   padding: 1rem;
-  color: #c7c7c7;
+  color: #E7E8E9;
 }
 .main__social {
   display: flex;
@@ -378,7 +379,8 @@ html, body {
 .footer {
   text-align: center;
   padding: 0.9rem;
-  background-color: #c7c7c7;
+  color: #E7E8E9;
+  background-color: #394E6D;
 }
 
 /*# sourceMappingURL=style.css.map */

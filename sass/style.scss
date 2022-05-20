@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Variáveis de cores do site */
-$light-gray: #c7c7c7;
-$white: #e7e8e9;
-$medium-blue: #394e6d;
-$dark-gray: #1e1e1e;
+$white: #E7E8E9;
+$medium-blue: #394E6D;
+$button-hover: #1A293F;
+$light-gray: #1E1E1EEA;
+$dark-gray: #1E1E1E;    
 
 /* Mixin para deixar a página responsiva.*/
 @mixin for-phone-only {
@@ -28,7 +29,7 @@ html,body {
 }
 
 ::-webkit-scrollbar-track {
-    background: $dark-gray;
+    background: $light-gray;
     border-radius: 30px;
 }
 
@@ -47,7 +48,7 @@ html,body {
 
     &__tittle {
         font-size: 3rem;
-        color: $light-gray;
+        color: $white;
         margin-top: -30rem;
         white-space: nowrap;
 
@@ -62,7 +63,7 @@ html,body {
         font-weight: 500;
         font-size: 1.8rem;
         padding: 1rem;
-        color: $light-gray;
+        color: $white;
     }
 
     &__social {
@@ -94,5 +95,6 @@ html,body {
 .footer {
     text-align: center;
     padding: 0.9rem;
-    background-color: $light-gray;
+    color: $white;
+    background-color: $medium-blue;
 }
