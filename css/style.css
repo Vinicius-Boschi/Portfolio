@@ -89,11 +89,6 @@
   padding: 1em 1.8em;
   text-align: center;
 }
-@media (min-width: 375px) and (max-width: 540px) {
-  .about__h2 {
-    padding: 0.8rem;
-  }
-}
 .about__picture {
   width: 25%;
   margin-left: 20rem;
@@ -133,55 +128,50 @@
   }
 }
 
-.skills__container {
+.skills {
   background: #1e1e1eea;
+  height: 25rem;
+}
+@media (min-width: 375px) and (max-width: 540px) {
+  .skills {
+    height: auto;
+  }
+}
+@media (min-width: 541px) and (max-width: 999px) {
+  .skills {
+    height: auto;
+  }
+}
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   font-size: 1.8rem;
   padding: 2rem;
-  height: 30rem;
+  margin-top: 3rem;
 }
 @media (min-width: 375px) and (max-width: 540px) {
   .skills__container {
-    font-size: 1.2rem;
-    height: 38rem;
-    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (min-width: 541px) and (max-width: 999px) {
   .skills__container {
-    font-size: 1.2rem;
-    height: 42rem;
-    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .skills__skills {
   text-align: center;
   color: #e7e8e9;
   font-size: 1.8rem;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 .skills__list {
-  background-color: #1e1e1e;
-  margin: 4rem;
-  width: 40%;
-  height: 80%;
-  border-radius: 0.6rem;
-  transform: translate(64%, -8%);
+  position: relative;
+  display: inline-block;
+  padding: 30px;
+  margin: 0 auto;
 }
-@media (min-width: 375px) and (max-width: 540px) {
-  .skills__list {
-    width: auto;
-    height: 60%;
-    transform: translate(0%);
-  }
-}
-@media (min-width: 541px) and (max-width: 999px) {
-  .skills__list {
-    width: 50%;
-    height: 55%;
-    transform: translate(30%);
-  }
-}
-.skills__stack {
+.skills__experience {
   color: #e7e8e9;
   text-align: center;
   padding: 1rem;
@@ -189,45 +179,11 @@
 }
 .skills__badges {
   display: flex;
-  border-radius: 5%;
-  color: #e7e8e9;
+  justify-content: space-evenly;
   padding: 1rem;
 }
 .skills__img {
-  width: 10%;
-  vertical-align: middle;
-}
-.skills__bar {
-  background-color: #c7c7c7;
-  height: 5px;
-  border-radius: 5px;
-}
-.skills__percentage--bar {
-  height: 5px;
-}
-.skills__html {
-  display: block;
-  background-color: #E44F25;
-  width: 85%;
-  border-radius: 5px;
-}
-.skills__css {
-  display: block;
-  background-color: #0072BD;
-  width: 80%;
-  border-radius: 5px;
-}
-.skills__js {
-  display: block;
-  background-color: #EAD41C;
-  width: 40%;
-  border-radius: 5px;
-}
-.skills__sass {
-  display: block;
-  background-color: #CE679A;
-  width: 75%;
-  border-radius: 5px;
+  width: 15%;
 }
 
 .portfolio__container {

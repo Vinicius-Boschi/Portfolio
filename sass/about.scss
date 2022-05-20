@@ -21,10 +21,6 @@
         margin-top: 20rem;
         padding: 1em 1.8em;
         text-align: center;
-
-        @include for-phone-only {
-            padding: .8rem;
-        }
     }
 
     &__picture {
