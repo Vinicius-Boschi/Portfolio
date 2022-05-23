@@ -4,6 +4,7 @@
 $white: #E7E8E9;
 $medium-blue: #394E6D;
 $button-hover: #1A293F;
+$background-button: #233F6A;
 $light-gray: #1E1E1EEA;
 $dark-gray: #1E1E1E;    
 
@@ -17,7 +18,7 @@ $dark-gray: #1E1E1E;
 }
 
 /* Importa os outros arquivos de estilização da página */
-@import 'header', 'about', 'skills', 'portfolio', 'button'; 
+@import 'header', 'about', 'skills', 'portfolio', 'button', 'animation' ,'footer'; 
 
 html,body {
     font-family: 'Roboto', serif;
@@ -49,13 +50,14 @@ html,body {
     &__tittle {
         font-size: 3rem;
         color: $white;
-        margin-top: -30rem;
-        white-space: nowrap;
+        margin-top: -25rem;
 
-        @include for-phone-only {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, 0%);
+        @include for-tablet-only {
+            margin-top: -28rem;
+        }
+
+        &_bold {
+            font-weight: bold;
         }
     } 
 
@@ -70,10 +72,6 @@ html,body {
         display: flex;
         justify-content: center;
         transition: all .3s;
-
-        @include for-phone-only {
-            transform: translate(-2%, -320%);
-        } 
 
         :hover {
             transform: scale(1.1);
@@ -90,11 +88,4 @@ html,body {
             width: 3rem;
         }
     }
-}
-
-.footer {
-    text-align: center;
-    padding: 0.9rem;
-    color: $white;
-    background-color: $medium-blue;
 }

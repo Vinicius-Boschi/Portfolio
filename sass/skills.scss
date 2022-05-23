@@ -1,6 +1,6 @@
 .skills {
     background: $light-gray; 
-    height: 25rem;
+    height: auto;
 
     @include for-phone-only {
         height: auto;

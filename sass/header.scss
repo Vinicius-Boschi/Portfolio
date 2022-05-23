@@ -5,15 +5,15 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 47rem;
+        height: 44rem;
     }
 
     &__container {
         background-color: #040e16d4;
-        padding-bottom: 41rem;
+        padding-bottom: 37.1rem;
 
         @include for-phone-only {
-            height: 13%;
+            height: 16%;
         }
     }
 
@@ -37,27 +37,43 @@
     }
     
     &__list {
+        display: flex;
+        justify-content: center;
         font-size: 1.8rem;
         padding: 1.5rem;
+
+        @include for-phone-only {
+            display: block;
+        }
     }
 
-    &__link {   
-        float: left;
-        display: block;
-        color: $white;
-        padding: 1rem 1rem;
+    &__link {
+        display: inline-block;
         text-decoration: none;
-        font-size: 2rem;
-        
-        &:hover {
+        color: $white;
+        position: relative;
+        padding: 1rem 1rem;
+
+        &::after {
+            content : '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
             background-color: $white;
-            border-radius: .3rem;
-            color: $dark-gray;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .5s;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
         }
 
         &.icon {
-            display: none;
-            
+            display: none;  
         }
 
         @include for-phone-only {
