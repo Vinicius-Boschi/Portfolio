@@ -84,7 +84,17 @@
 }
 
 .about {
-  margin-top: -1rem;
+  margin-top: -4rem;
+}
+@media (min-width: 375px) and (max-width: 540px) {
+  .about {
+    margin-top: -2.4rem;
+  }
+}
+@media (min-width: 541px) and (max-width: 999px) {
+  .about {
+    margin-top: -1rem;
+  }
 }
 .about__container {
   display: flex;

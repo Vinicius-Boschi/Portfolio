@@ -1,5 +1,13 @@
 .about {
-    margin-top: -1rem;
+    margin-top: -4rem;
+
+    @include for-phone-only {
+        margin-top: -2.4rem;
+    }
+
+    @include for-tablet-only {
+        margin-top: -1rem;
+    }
 
     &__container {
         display: flex;
