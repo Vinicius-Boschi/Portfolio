@@ -64,5 +64,11 @@ let projects = [
       link: "https://optimustech.netlify.app/",
       image: "images/projects/optimusTech.jpg",
       text: "optimus tech"
+    },
+
+    {
+      link: "https://github.com/Vinicius-Boschi/Filmes",
+      image: "images/projects/movies.jpg",
+      text: "filmes"
     }
   ]
