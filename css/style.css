@@ -427,6 +427,26 @@ html, body {
   visibility: visible;
 }
 
+.preloader {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #E7E8E9;
+  z-index: 999;
+  transition: all 3s;
+}
+
+.hide-preloader {
+  z-index: 999;
+  visibility: hidden;
+}
+
 .main {
   text-align: center;
 }

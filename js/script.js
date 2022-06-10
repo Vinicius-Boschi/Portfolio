@@ -60,3 +60,9 @@ function myFunction() { // Função que faz a navbar funcionar o botão na respo
 }
 
 AOS.init() // Chama a função AOS para deixar os item escolhidos com animação. Ela vem dos link que são importados no html da página principal.
+
+const preloader = document.querySelector(".preloader")
+
+window.addEventListener("load", function () {
+  preloader.classList.add("hide-preloader")
+})
