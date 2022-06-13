@@ -28,19 +28,19 @@ load() // Aqui ele vai mostrar a função na tela.
 
 // Animação de escrita.
 
-// function typeWrite(element){ // Função que deixa o texto com uma animação de escrita.
-//   const textoArray = element.innerHTML.split('')
-//   element.innerHTML = ' '
-//   textoArray.forEach(function(letter, i){   
+function typeWrite(element){ // Função que deixa o texto com uma animação de escrita.
+  const textoArray = element.innerHTML.split('')
+  element.innerHTML = ' '
+  textoArray.forEach(function(letter, i){   
 
-//     setTimeout(function(){ // Definindo o tempo de duração da animação.
-//         element.innerHTML += letter
-//     }, 130 * i)
-//   })
-// }
+    setTimeout(function(){ // Definindo o tempo de duração da animação.
+        element.innerHTML += letter
+    }, 500 * i)
+  })
+}
 
-// const tittle = document.querySelector('.main__effect') // Onde vai ser aplicada a função.
-// typeWrite(tittle) // Mostrará na tela.
+const tittle = document.querySelector('.header__effect') // Onde vai ser aplicada a função.
+typeWrite(tittle) // Mostrará na tela.
 
 // Navbar Responsiva.
 
@@ -61,7 +61,7 @@ button.addEventListener("click", function() {
 
 // Navbar Fixa.
 
-let navbar = document.getElementById("active")
+let navbar = document.querySelector(".header__navbar")
 let btn = document.querySelector(".btn")
 
 window.addEventListener("scroll", function() {
@@ -84,7 +84,7 @@ window.addEventListener("scroll", function() {
 // Animação de conteúdo vindo pela esquerda.
 AOS.init() // Chama a função AOS para deixar os item escolhidos com animação. Ela vem dos link que são importados no html da página principal.
 
-// Animação de carregamento.
+// // Animação de carregamento.
 const preloader = document.querySelector(".preloader")
 
 window.addEventListener("load", function () {

@@ -28,7 +28,7 @@
     
     <header class="header" id="home">
             <div class="header__container">  
-                <nav class="header__navbar" id="active" role="navigation">
+                <nav class="header__navbar" role="navigation">
                     <div class="header__action">
                         <img src="images/aboutMe.png" class="header__logo" alt="logo">
                         <button class="header__button">
@@ -53,44 +53,42 @@
                     </div>
                 </nav>
             </div>
-    </header>
 
-    <!-- <main class="main">
-        <div class="main__content">
-            <div class="main__tittle">
-                <h1>Vinícius <span class="main__tittle_bold">Boschi</span></h1>
-                <h3 class="main__effect">Front-end Developer.</h3>
+            <div class="header__content">
+                <div class="header__tittle">
+                    <h1>Vinícius <span class="header__tittle_bold">Boschi</span></h1>
+                    <h3 class="header__effect">Front-end Developer.</h3>
+                </div>
+                <ul class="header__social">
+                    <li>
+                        <a class="header__btn" href="https://github.com/Vinicius-Boschi" target="_blank">
+                            <img class="header__github" src="images/icons/github.svg" alt="icon-github">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header__btn" href="https://codepen.io/vinicius-simoes" target="_blank">
+                            <img class="header__codepen" src="images/icons/codepen.png" alt="icon-codepen">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header__btn" href="mailto:vinicius.yg@gmail.com" target="_blank">
+                            <img class="header__email" src="images/icons/icons8-email-aberto-96.png" alt="icon-email">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header__btn" href="https://www.linkedin.com/in/viniciusboschi/" target="_blank">
+                            <img class="header__linkedin" src="images/icons/icons8-linkedin.svg" alt="icon-linkedin">
+                        </a>
+                    </li>
+                </ul>
+                <div class="animation">
+                    <p class="animation__scroll">Scroll Down</p>   
+                    <span class="animation__mouse">
+                      <span class="animation__mouse-wheel"></span>
+                    </span>
+                </div>
             </div>
-            <ul class="main__social">
-                <li>
-                    <a class="main__btn" href="https://github.com/Vinicius-Boschi" target="_blank">
-                        <img class="main__github" src="images/icons/github.svg" alt="icon-github">
-                    </a>
-                </li>
-                <li>
-                    <a class="main__btn" href="https://codepen.io/vinicius-simoes" target="_blank">
-                        <img class="main__codepen" src="images/icons/codepen.png" alt="icon-codepen">
-                    </a>
-                </li>
-                <li>
-                    <a class="main__btn" href="mailto:vinicius.yg@gmail.com" target="_blank">
-                        <img class="main__email" src="images/icons/icons8-email-aberto-96.png" alt="icon-email">
-                    </a>
-                </li>
-                <li>
-                    <a class="main__btn" href="https://www.linkedin.com/in/viniciusboschi/" target="_blank">
-                        <img class="main__linkedin" src="images/icons/icons8-linkedin.svg" alt="icon-linkedin">
-                    </a>
-                </li>
-            </ul>
-            <div class="animation">
-                <p class="animation__scroll">Scroll Down</p>   
-                <span class="animation__mouse">
-                  <span class="animation__mouse-wheel"></span>
-                </span>
-            </div>
-        </div>
-    </main> -->
+    </header>
 
 		<section class="about" id="about">
 			<div class="about__container" data-aos="fade-right" data-aos-duration="2000">
@@ -165,10 +163,6 @@
 			</div>
         </section>
 
-        <a href="#home" class="btn show">
-            <i class="fas fa-arrow-up"></i>
-        </a>  
-
         <footer class="footer">
             <div class="footer__content">
                 <h3 class="footer__name">Vinícius<span class="footer__name_bold"> Boschi</span></h3>
@@ -190,6 +184,10 @@
                 </a>
             </div>
         </footer>
+
+        <a href="#home" class="btn show">
+            <i class="fas fa-arrow-up"></i>
+        </a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

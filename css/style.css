@@ -68,7 +68,16 @@
 }
 .header__links-container {
   transition: all 0.3s linear;
-  overflow: hidden;
+}
+@media (min-width: 375px) and (max-width: 540px) {
+  .header__links-container {
+    overflow: hidden;
+  }
+}
+@media (min-width: 541px) and (max-width: 999px) {
+  .header__links-container {
+    overflow: hidden;
+  }
 }
 .header__list {
   display: flex;
@@ -112,6 +121,50 @@
 .header__link:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.header__tittle {
+  font-size: 3rem;
+  color: #E7E8E9;
+}
+@media (min-width: 541px) and (max-width: 999px) {
+  .header__tittle {
+    margin-top: -28rem;
+  }
+}
+.header__tittle_bold {
+  font-weight: bold;
+}
+.header__effect {
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding: 1rem;
+  color: #E7E8E9;
+}
+.header__social {
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.header__social :hover {
+  transform: scale(1.1);
+}
+.header__github, .header__codepen, .header__linkedin, .header__email {
+  width: 4.5rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 1.8rem;
+}
+@media (min-width: 375px) and (max-width: 540px) {
+  .header__github, .header__codepen, .header__linkedin, .header__email {
+    width: 3rem;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 540px) {
@@ -466,51 +519,6 @@ html, body {
 .hide-preloader {
   z-index: 999;
   visibility: hidden;
-}
-
-.main {
-  text-align: center;
-}
-.main__content {
-  position: relative;
-}
-.main__tittle {
-  font-size: 3rem;
-  color: #E7E8E9;
-  margin-top: -25rem;
-}
-@media (min-width: 541px) and (max-width: 999px) {
-  .main__tittle {
-    margin-top: -28rem;
-  }
-}
-.main__tittle_bold {
-  font-weight: bold;
-}
-.main__effect {
-  font-weight: 500;
-  font-size: 1.8rem;
-  padding: 1rem;
-  color: #E7E8E9;
-}
-.main__social {
-  display: flex;
-  justify-content: center;
-  transition: all 0.3s;
-}
-.main__social :hover {
-  transform: scale(1.1);
-}
-.main__github, .main__codepen, .main__linkedin, .main__email {
-  width: 4.5rem;
-  margin-top: 2rem;
-  padding: 1rem;
-  border-radius: 1.8rem;
-}
-@media (min-width: 375px) and (max-width: 540px) {
-  .main__github, .main__codepen, .main__linkedin, .main__email {
-    width: 3rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

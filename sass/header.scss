@@ -68,7 +68,14 @@
 
     &__links-container {
         transition: all .3s linear;
-        overflow: hidden;
+
+        @include for-phone-only {
+            overflow: hidden;
+        }
+
+        @include for-tablet-only {
+            overflow: hidden;
+        }
     }
     
     &__list {
@@ -113,6 +120,55 @@
         &:hover::after {
             transform: scaleX(1);
             transform-origin: left;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        min-height: 100vh;
+    }
+
+    &__tittle {
+        font-size: 3rem;
+        color: $white;
+
+        @include for-tablet-only {
+            margin-top: -28rem;
+        }
+
+        &_bold {
+            font-weight: bold;
+        }
+    } 
+
+    &__effect {
+        font-weight: 500;
+        font-size: 1.8rem;
+        padding: 1rem;
+        color: $white;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        transition: all .3s;
+
+        :hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__github, &__codepen, &__linkedin, &__email {
+        width: 4.5rem;
+        margin-top: 2rem;
+        padding: 1rem; 
+        border-radius: 1.8rem;
+
+        @include for-phone-only {
+            width: 3rem;
         }
     }
 }
