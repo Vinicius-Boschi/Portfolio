@@ -288,8 +288,23 @@
   justify-content: space-evenly;
   padding: 1rem;
 }
+.skills__languages {
+  padding: 1rem;
+}
+.skills__languages:hover {
+  transition: 1s;
+  transform: translateY(-10px) scale(1);
+}
+.skills__text {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  color: #E7E8E9;
+  text-transform: uppercase;
+  text-align: center;
+}
 .skills__img {
-  width: 15%;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 .portfolio__container {
