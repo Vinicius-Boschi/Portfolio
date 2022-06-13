@@ -4,9 +4,10 @@
 $white: #E7E8E9;
 $medium-blue: #394E6D;
 $button-hover: #1A293F;
-$background-button: #233F6A;
+$background: #233F6A;
 $light-gray: #1E1E1EEA;
-$dark-gray: #1E1E1E;    
+$dark-gray: #1E1E1E;   
+$light-shadow: 0 5px 15px #0000001A; 
 
 /* Mixin para deixar a página responsiva.*/
 @mixin for-phone-only {

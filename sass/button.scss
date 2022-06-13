@@ -1,26 +1,18 @@
 .btn {
-    display: inline-block;
-    background-color: $background-button;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
+    display: grid;
+    font-size: 1.25rem;
     position: fixed;
-    bottom: 2rem;
-    right: 1rem;
-    transition: background-color .3s, opacity .5s, visibility .5s;
-    opacity: 0;
+    bottom: 3rem;
+    right: 3rem;
+    background: $background;
+    width: 3rem;
+    height: 3rem;
+    place-items: center;
+    border-radius: .5rem;
+    color: $white;
     visibility: hidden;
-    z-index: 1;
-
-    &::after {
-        content: "\f077";
-        font-family: FontAwesome;
-        font-size: 2em; 
-        line-height: 50px;
-        color: $white;
-    }
+    z-index: 100;
+    text-decoration: none;
 
     &:hover {
         cursor: pointer;

@@ -55,9 +55,9 @@ let projects = [
   },
 
   {
-    link: "https://challengesballerini.netlify.app/",
-    image: "images/projects/desafios-ballerini.jpg",
-    text: "desafios"
+    link: "https://vanillaprojects.netlify.app/",
+    image: "images/projects/projetos-js.jpg",
+    text: "projetos js"
   },
 
   {

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="https://img.icons8.com/dotty/80/000000/portfolio.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L8GM28F4Y"></script>
@@ -23,35 +23,39 @@
 <body>
 
     <div class="preloader">
-        <img src="images/video/preloader.gif    " alt="">
+        <img src="images/video/preloader.gif" alt="preloader">
     </div>
     
-    <header class="header">
-        <div class="header__overlay">
+    <header class="header" id="home">
             <div class="header__container">  
                 <nav class="header__navbar" id="active" role="navigation">
-                    <ul class="header__list">
-                        <li class="header__links">
-                            <a class="header__link" href="#about">Sobre</a>
-                        </li>
-                        <li class="header__links">
-                            <a class="header__link" href="#skills">Habilidades</a>
-                        </li>
-                        <li class="header__links">
-                            <a class="header__link" href="#portfolio">Projetos</a>
-                        </li>
-                        <li class="header__links">
-                            <a href="#" class="header__link icon" onclick="myFunction()">
-                                <i class="fa fa-bars"></i>
-                              </a>
-                        </li>
-                    </ul>
+                    <div class="header__action">
+                        <img src="images/aboutMe.png" class="header__logo" alt="logo">
+                        <button class="header__button">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="header__links-container">
+                        <ul class="header__list">
+                            <li class="header__links">
+                                <a class="header__link" href="#home">home</a>
+                            </li>
+                            <li class="header__links">
+                                <a class="header__link" href="#about">sobre</a>
+                            </li>
+                            <li class="header__links">
+                                <a class="header__link" href="#skills">habilidades</a>
+                            </li>
+                            <li class="header__links">
+                                <a class="header__link" href="#portfolio">projetos</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
-        </div>
     </header>
 
-    <main class="main">
+    <!-- <main class="main">
         <div class="main__content">
             <div class="main__tittle">
                 <h1>Vinícius <span class="main__tittle_bold">Boschi</span></h1>
@@ -86,7 +90,7 @@
                 </span>
             </div>
         </div>
-    </main>
+    </main> -->
 
 		<section class="about" id="about">
 			<div class="about__container" data-aos="fade-right" data-aos-duration="2000">
@@ -161,12 +165,14 @@
 			</div>
         </section>
 
-        <a href="index.html" class="btn show"></a> 
+        <a href="#home" class="btn show">
+            <i class="fas fa-arrow-up"></i>
+        </a>  
 
         <footer class="footer">
             <div class="footer__content">
                 <h3 class="footer__name">Vinícius<span class="footer__name_bold"> Boschi</span></h3>
-                <p class="footer__copy">©2022 - Vinícius Boschi</p>
+                <p class="footer__copy">&copy; <span id="date"></span> - Vinícius Boschi</p>
                 <p class="footer__rights">Todos os direitos reservados.</p>
             </div>
             <div class="footer__media">

@@ -1,3 +1,8 @@
+// Data.
+const date = document.getElementById("date")
+date.innerHTML = new Date().getFullYear() // Mostra o ano atual.
+
+// Projetos.
 let projectsPortfolio = document.querySelector(".portfolio__projects") // Aqui que vai ser colocado os itens dessa função abaixo.
 
 function showProjects() {
@@ -21,48 +26,67 @@ function load() {
 }
 load() // Aqui ele vai mostrar a função na tela.
 
-let button = $('.btn') // Definindo da onde vem o botão.
+// Animação de escrita.
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() >= 400) {  // Se for maior que 450 o botão irá aparecer na página. 
-    button.addClass('show') // Aqui o botão aparece na página.
+// function typeWrite(element){ // Função que deixa o texto com uma animação de escrita.
+//   const textoArray = element.innerHTML.split('')
+//   element.innerHTML = ' '
+//   textoArray.forEach(function(letter, i){   
+
+//     setTimeout(function(){ // Definindo o tempo de duração da animação.
+//         element.innerHTML += letter
+//     }, 130 * i)
+//   })
+// }
+
+// const tittle = document.querySelector('.main__effect') // Onde vai ser aplicada a função.
+// typeWrite(tittle) // Mostrará na tela.
+
+// Navbar Responsiva.
+
+let button = document.querySelector(".header__button")
+let linksContainer = document.querySelector(".header__links-container")
+let links = document.querySelector(".header__list")
+
+button.addEventListener("click", function() {
+  const containerHeight = linksContainer.getBoundingClientRect().height // Mostra o height atual dos links.
+  const linksHeight = links.getBoundingClientRect().height
+
+  if (containerHeight === 0) {
+    linksContainer.style.height = `${linksHeight}px` // Se for estritamente igual a 0 ele adiciona o height no navbar, fazendo com que ele mostre os links nele.
   } else {
-    button.removeClass('show') // Botão desaparece.
+    linksContainer.style.height = 0 // Se não ele recolhe tudo.
+  }
+}) 
+
+// Navbar Fixa.
+
+let navbar = document.getElementById("active")
+let btn = document.querySelector(".btn")
+
+window.addEventListener("scroll", function() {
+  const scrollHeight = window.pageYOffset // Quando descer a página a navbar fica fixa.
+  const navHeight = navbar.getBoundingClientRect().height
+
+  if (scrollHeight > navHeight) {
+    navbar.classList.add("header__navbar-fixed")
+  } else {
+    navbar.classList.remove("header__navbar-fixed")
+  }
+
+  if (scrollHeight > 500) { // Se for maior que 500 o botão aparece.
+    btn.classList.add('show')
+  } else { // Se for menor ele desaparece.
+    btn.classList.remove('show')
   }
 })
 
-button.on('click', function(e) { // Quando clicar no botão irá fazer uma animação de clique.
-  e.preventDefault(); 
-  $('html, body').animate({scrollTop: 0}, '300') // Faz o botão subir a página toda e deixa ele com animação.
-})
-
-function typeWrite(element){ // Função que deixa o texto com uma animação de escrita.
-  const textoArray = element.innerHTML.split('')
-  element.innerHTML = ' '
-  textoArray.forEach(function(letter, i){   
-
-    setTimeout(function(){ // Definindo o tempo de duração da animação.
-        element.innerHTML += letter
-    }, 130 * i)
-  })
-}
-
-const tittle = document.querySelector('.main__effect') // Onde vai ser aplicada a função.
-typeWrite(tittle) // Mostrará na tela.
-  
-function myFunction() { // Função que faz a navbar funcionar o botão na responsividade.
-  var x = document.getElementById("active")
-  if (x.className === "header__navbar") { // Se for igual a essa classe, ele deixará responsiva, senão, irá deixar do jeito que esta.
-    x.className += " header__navbar__responsive"
-  } else {
-    x.className = "header__navbar"
-  }
-}
-
+// Animação de conteúdo vindo pela esquerda.
 AOS.init() // Chama a função AOS para deixar os item escolhidos com animação. Ela vem dos link que são importados no html da página principal.
 
+// Animação de carregamento.
 const preloader = document.querySelector(".preloader")
 
 window.addEventListener("load", function () {
-  preloader.classList.add("hide-preloader")
+  preloader.classList.add("hide-preloader") // Toda vez que a página for recarregada, essa função irá funcionar.
 })

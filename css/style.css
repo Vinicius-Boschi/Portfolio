@@ -3,46 +3,84 @@
 /* Variáveis de cores do site */
 /* Mixin para deixar a página responsiva.*/
 /* Importa os outros arquivos de estilização da página */
-.header__overlay {
-  background-image: url("https://99cripto.com.br/wp-content/uploads/2018/12/blockchain-programming-lauguage.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 44rem;
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url(../images/hero.jpeg) center/cover no-repeat;
 }
 .header__container {
   background-color: #040e16d4;
-  padding-bottom: 37.1rem;
-}
-@media (min-width: 375px) and (max-width: 540px) {
-  .header__container {
-    height: 16%;
-  }
 }
 .header__navbar {
-  overflow: hidden;
-  background: #394E6D;
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.header__navbar-fixed {
+  padding: 1.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #233F6A;
+  box-shadow: 0 5px 15px #0000001A;
+  z-index: 999 !important;
+}
+.header__navbar-fixed .header__link {
+  color: #E7E8E9;
 }
 @media (min-width: 375px) and (max-width: 540px) {
   .header__navbar {
-    width: 100%;
-  }
-  .header__navbar__responsive {
-    position: relative;
-  }
-  .header__navbar__responsive .header__link {
-    float: none;
     display: block;
-    text-align: left;
   }
+}
+@media (min-width: 541px) and (max-width: 999px) {
+  .header__navbar {
+    display: block;
+  }
+}
+.header__action {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  height: 100px;
+}
+.header__button {
+  display: none;
+  font-size: 1.5rem;
+  color: #E7E8E9;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+@media (min-width: 375px) and (max-width: 540px) {
+  .header__button {
+    display: block;
+  }
+}
+@media (min-width: 541px) and (max-width: 999px) {
+  .header__button {
+    display: block;
+  }
+}
+.header__links-container {
+  transition: all 0.3s linear;
+  overflow: hidden;
 }
 .header__list {
   display: flex;
-  justify-content: center;
   font-size: 1.8rem;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 @media (min-width: 375px) and (max-width: 540px) {
+  .header__list {
+    display: block;
+  }
+}
+@media (min-width: 541px) and (max-width: 999px) {
   .header__list {
     display: block;
   }
@@ -50,9 +88,14 @@
 .header__link {
   display: inline-block;
   text-decoration: none;
-  color: #E7E8E9;
   position: relative;
   padding: 1rem 1rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+  transition: all 0.3s linear;
+  font-weight: bold;
+  color: #E7E8E9;
 }
 .header__link::after {
   content: "";
@@ -70,22 +113,7 @@
   transform: scaleX(1);
   transform-origin: left;
 }
-.header__link.icon {
-  display: none;
-}
-@media (min-width: 375px) and (max-width: 540px) {
-  .header__link {
-    display: none;
-  }
-  .header__link.icon {
-    float: left;
-    display: block;
-  }
-}
 
-.about {
-  margin-top: -4rem;
-}
 @media (min-width: 375px) and (max-width: 540px) {
   .about {
     margin-top: -2.4rem;
@@ -300,27 +328,20 @@
 }
 
 .btn {
-  display: inline-block;
-  background-color: #233F6A;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
+  display: grid;
+  font-size: 1.25rem;
   position: fixed;
-  bottom: 2rem;
-  right: 1rem;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1;
-}
-.btn::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-size: 2em;
-  line-height: 50px;
+  bottom: 3rem;
+  right: 3rem;
+  background: #233F6A;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  border-radius: 0.5rem;
   color: #E7E8E9;
+  visibility: hidden;
+  z-index: 100;
+  text-decoration: none;
 }
 .btn:hover {
   cursor: pointer;

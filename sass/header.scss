@@ -1,48 +1,86 @@
 .header {
-    
-    &__overlay {
-        background-image: url("https://99cripto.com.br/wp-content/uploads/2018/12/blockchain-programming-lauguage.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 44rem;
-    }
 
+    min-height: 100vh;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url(../images/hero.jpeg) center/cover no-repeat;
+    
     &__container {
         background-color: #040e16d4;
-        padding-bottom: 37.1rem;
-
-        @include for-phone-only {
-            height: 16%;
-        }
     }
 
     &__navbar {
-        overflow: hidden;
-        background: $medium-blue;
+
+        width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+
+        &-fixed {
+            padding: 1.5rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: $background;
+            box-shadow: $light-shadow;
+            z-index: 999 !important;
+        }
+        
+        &-fixed .header__link {
+            color: $white;
+        }
 
         @include for-phone-only {
-            width: 100%;
-
-            &__responsive {
-                position: relative;
-                
-                .header__link {
-                    float: none;
-                    display: block;
-                    text-align: left;
-                }
-            }
+            display: block;
         }
+
+        @include for-tablet-only {
+            display: block;
+        }
+    }
+
+    &__action {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        height: 100px;
+    }
+
+    &__button {
+        display: none;
+        font-size: 1.5rem;
+        color: $white;
+        background: transparent;
+        border-color: transparent;
+        transition: all .3s linear;
+        cursor: pointer;
+
+        @include for-phone-only {
+            display: block;
+        }
+
+        @include for-tablet-only {
+            display: block;
+        }
+    }
+
+    &__links-container {
+        transition: all .3s linear;
+        overflow: hidden;
     }
     
     &__list {
         display: flex;
-        justify-content: center;
         font-size: 1.8rem;
-        padding: 1.5rem;
+        padding: 2rem;
 
         @include for-phone-only {
+            display: block;
+        }
+
+        @include for-tablet-only {
             display: block;
         }
     }
@@ -50,9 +88,14 @@
     &__link {
         display: inline-block;
         text-decoration: none;
-        color: $white;
         position: relative;
         padding: 1rem 1rem;
+        font-size: 1.1rem;
+        text-transform: capitalize;
+        letter-spacing: .25rem;
+        transition: all .3s linear;
+        font-weight: bold; 
+        color: $white;   
 
         &::after {
             content : '';
@@ -70,19 +113,6 @@
         &:hover::after {
             transform: scaleX(1);
             transform-origin: left;
-        }
-
-        &.icon {
-            display: none;  
-        }
-
-        @include for-phone-only {
-            display: none;
-            
-            &.icon {
-                float: left;
-                display: block;
-            }
         }
     }
 }
