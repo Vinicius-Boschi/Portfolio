@@ -135,10 +135,6 @@
         font-size: 3rem;
         color: $white;
 
-        @include for-tablet-only {
-            margin-top: -28rem;
-        }
-
         &_bold {
             font-weight: bold;
         }

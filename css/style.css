@@ -133,11 +133,6 @@
   font-size: 3rem;
   color: #E7E8E9;
 }
-@media (min-width: 541px) and (max-width: 999px) {
-  .header__tittle {
-    margin-top: -28rem;
-  }
-}
 .header__tittle_bold {
   font-weight: bold;
 }
