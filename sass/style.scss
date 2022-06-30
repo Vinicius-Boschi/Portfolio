@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima&family=Roboto&display=swap');
 
 /* Variáveis de cores do site */
 $white: #E7E8E9;
@@ -8,6 +8,7 @@ $background: #233F6A;
 $light-gray: #1E1E1EEA;
 $dark-gray: #1E1E1E;   
 $light-shadow: 0 5px 15px #0000001A; 
+$fontRoboto: 'Roboto', sans-serif;
 
 /* Mixin para deixar a página responsiva.*/
 @mixin for-phone-only {
@@ -22,7 +23,7 @@ $light-shadow: 0 5px 15px #0000001A;
 @import 'header', 'about', 'skills', 'portfolio', 'button', 'animation' ,'footer'; 
 
 html,body {
-    font-family: 'Roboto', serif;
+    font-family: 'Arima', cursive;
     scroll-behavior: smooth;
 }   
 

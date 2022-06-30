@@ -12,8 +12,10 @@
     }
 
     &__name {
+        font-family: $fontRoboto;
         font-size: 2rem;
         padding: .5rem;
+        
         &_bold {
             font-weight: bold;
         }

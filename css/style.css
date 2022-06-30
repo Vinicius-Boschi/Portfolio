@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima&family=Roboto&display=swap");
 /* Variáveis de cores do site */
 /* Mixin para deixar a página responsiva.*/
 /* Importa os outros arquivos de estilização da página */
@@ -128,10 +128,12 @@
   justify-content: center;
   text-align: center;
   min-height: 100vh;
+  background: #00000070;
 }
 .header__tittle {
   font-size: 3rem;
   color: #E7E8E9;
+  font-family: "Roboto", sans-serif;
 }
 .header__tittle_bold {
   font-weight: bold;
@@ -162,32 +164,44 @@
   }
 }
 
-@media (min-width: 375px) and (max-width: 540px) {
-  .about {
-    margin-top: -2.4rem;
-  }
-}
-@media (min-width: 541px) and (max-width: 999px) {
-  .about {
-    margin-top: -1rem;
-  }
-}
 .about__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background: #1E1E1E;
-  height: auto;
 }
 .about__h2 {
+  font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
   padding-top: 3rem;
   color: #E7E8E9;
   text-align: center;
 }
+.about__info {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 375px) and (max-width: 540px) {
+  .about__info {
+    display: block;
+  }
+}
+@media (min-width: 541px) and (max-width: 999px) {
+  .about__info {
+    display: block;
+  }
+}
 .about__my {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+@media (min-width: 375px) and (max-width: 540px) {
+  .about__my {
+    height: 200px;
+  }
+}
+@media (min-width: 541px) and (max-width: 999px) {
+  .about__my {
+    height: 250px;
+  }
 }
 .about__picture {
   width: 20rem;
@@ -200,18 +214,29 @@
 }
 @media (min-width: 541px) and (max-width: 999px) {
   .about__picture {
-    width: 40%;
     margin: auto;
   }
 }
 .about__informations {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  width: 60%;
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 375px) and (max-width: 540px) {
+  .about__informations {
+    width: auto;
+  }
+}
+@media (min-width: 541px) and (max-width: 999px) {
+  .about__informations {
+    width: auto;
+  }
 }
 .about__text {
-  width: 50%;
-  line-height: 2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
   color: #E7E8E9;
   font-size: 1.1rem;
   margin: 0.5rem;
@@ -219,7 +244,7 @@
 @media (min-width: 375px) and (max-width: 540px) {
   .about__text {
     width: auto;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 }
 @media (min-width: 541px) and (max-width: 999px) {
@@ -261,6 +286,7 @@
   }
 }
 .skills__skills {
+  font-family: "Roboto", sans-serif;
   text-align: center;
   color: #E7E8E9;
   font-size: 1.8rem;
@@ -269,10 +295,10 @@
 .skills__list {
   position: relative;
   display: inline-block;
-  padding: 30px;
   margin: 0 auto;
 }
 .skills__experience {
+  font-family: "Roboto", sans-serif;
   color: #E7E8E9;
   text-align: center;
   padding: 1rem;
@@ -309,6 +335,7 @@
 }
 .portfolio__h2 {
   text-align: center;
+  font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
   color: #E7E8E9;
   padding-top: 1rem;
@@ -339,16 +366,21 @@
   border-radius: 0.5rem;
   box-shadow: 0 0.3rem 0.6rem #1E1E1E;
   border: 1px solid #E7E8E9;
-  width: 180%;
+  width: 25vh;
   transition: 1s;
 }
 .portfolio__img:hover {
   box-shadow: 5px 5px #E7E8E9;
   transform: translateY(-10px) scale(1);
 }
+@media (min-width: 375px) and (max-width: 540px) {
+  .portfolio__img {
+    width: 20vh;
+  }
+}
 @media (min-width: 541px) and (max-width: 999px) {
   .portfolio__img {
-    width: 110%;
+    width: 30vh;
   }
 }
 .portfolio__text {
@@ -368,7 +400,6 @@
   border: 2px solid #E7E8E9;
   border-radius: 5px;
   color: #E7E8E9;
-  width: 5%;
   padding: 0.5rem;
   margin: 0 auto;
   transition: 1s;
@@ -409,6 +440,7 @@
 .btn:hover {
   cursor: pointer;
   background-color: #1A293F;
+  transition: 1s;
 }
 .btn.show {
   opacity: 1;
@@ -463,6 +495,7 @@
   }
 }
 .footer__name {
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   padding: 0.5rem;
 }
@@ -492,7 +525,7 @@
 }
 
 html, body {
-  font-family: "Roboto", serif;
+  font-family: "Arima", cursive;
   scroll-behavior: smooth;
 }
 

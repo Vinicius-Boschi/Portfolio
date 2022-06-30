@@ -27,6 +27,7 @@
     }
 
     &__skills {
+        font-family: $fontRoboto;
         text-align: center;
         color: $white;
         font-size: 1.8rem;
@@ -36,11 +37,11 @@
     &__list {
         position: relative;
         display: inline-block;
-        padding: 30px;
         margin: 0 auto;
     }
 
     &__experience {
+        font-family: $fontRoboto;
         color: $white;
         text-align: center;
         padding: 1rem;

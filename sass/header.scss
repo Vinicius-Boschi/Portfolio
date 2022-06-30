@@ -129,11 +129,13 @@
         justify-content: center;
         text-align: center;
         min-height: 100vh;
+        background: #00000070;
     }
 
     &__tittle {
         font-size: 3rem;
         color: $white;
+        font-family: $fontRoboto;
 
         &_bold {
             font-weight: bold;
