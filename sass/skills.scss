@@ -11,8 +11,8 @@
     }
 
     &__container {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
+        display: flex;
+        flex-direction: column;
         font-size: 1.8rem;
         padding: 2rem;
         margin-top: 3rem;
@@ -26,6 +26,18 @@
         }
     }
 
+    &__experience {
+        font-family: $fontRoboto;
+        color: $white;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+
+    &__learning {
+        padding: 1rem;
+    }
+
     &__skills {
         font-family: $fontRoboto;
         text-align: center;
@@ -35,44 +47,69 @@
     }
 
     &__list {
-        position: relative;
-        display: inline-block;
-        margin: 0 auto;
-    }
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        justify-items: center;
 
-    &__experience {
-        font-family: $fontRoboto;
-        color: $white;
-        text-align: center;
-        padding: 1rem;
-        font-size: 1.8rem;
+        @include for-phone-only {
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        @include for-tablet-only {
+            grid-template-columns: repeat(2,1fr);
+        }
     }
 
     &__badges {
         display: flex;
-        justify-content: space-evenly;
+        align-items: center;
+        width: 20vw;
+        height: auto;
+        border-radius: .4rem;
+        border: 1px solid $background;
         padding: 1rem;
+
+        @include for-phone-only {
+            width: 100%;
+        }
+
+        @include for-tablet-only {
+            width: 90%;
+        }
     }
 
-    &__languages {    
-        padding: 1rem;  
+    &__img {
+        width: 2.5rem;
+        height: auto;
+    }
 
-        &:hover {
-            transition: 1s;
-            transform: translateY(-10px) scale(1);
+    &__bars {
+        margin-left: 1vw;
+        height: 4rem;
+        width: .4rem;
+        border-radius: .37rem;
+        background-color: $background;
+
+        @include for-phone-only {
+            margin-left: 3vw;
         }
+    }
+
+    &__infos {
+        margin-left: 1rem;
+        color: $white;
+    }
+
+    &__language {    
+        text-transform: uppercase;
+        font-size: 1rem;
     }
 
      &__text {
         padding-top: 1rem;
-        font-size: 1.5rem;
-        color: $white; 
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    &__img {
-       width: 4.5rem;
-       height: 4.5rem;
+        font-size: .7rem;
+        line-height: 1rem;
+        letter-spacing: .5px;
     }
 }

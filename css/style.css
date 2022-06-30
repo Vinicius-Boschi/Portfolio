@@ -269,8 +269,8 @@
   }
 }
 .skills__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   font-size: 1.8rem;
   padding: 2rem;
   margin-top: 3rem;
@@ -285,6 +285,16 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.skills__experience {
+  font-family: "Roboto", sans-serif;
+  color: #E7E8E9;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+.skills__learning {
+  padding: 1rem;
+}
 .skills__skills {
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -293,39 +303,69 @@
   padding-top: 3rem;
 }
 .skills__list {
-  position: relative;
-  display: inline-block;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
 }
-.skills__experience {
-  font-family: "Roboto", sans-serif;
-  color: #E7E8E9;
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.8rem;
+@media (min-width: 375px) and (max-width: 540px) {
+  .skills__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 541px) and (max-width: 999px) {
+  .skills__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .skills__badges {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  width: 20vw;
+  height: auto;
+  border-radius: 0.4rem;
+  border: 1px solid #233F6A;
   padding: 1rem;
 }
-.skills__languages {
-  padding: 1rem;
+@media (min-width: 375px) and (max-width: 540px) {
+  .skills__badges {
+    width: 100%;
+  }
 }
-.skills__languages:hover {
-  transition: 1s;
-  transform: translateY(-10px) scale(1);
+@media (min-width: 541px) and (max-width: 999px) {
+  .skills__badges {
+    width: 90%;
+  }
+}
+.skills__img {
+  width: 2.5rem;
+  height: auto;
+}
+.skills__bars {
+  margin-left: 1vw;
+  height: 4rem;
+  width: 0.4rem;
+  border-radius: 0.37rem;
+  background-color: #233F6A;
+}
+@media (min-width: 375px) and (max-width: 540px) {
+  .skills__bars {
+    margin-left: 3vw;
+  }
+}
+.skills__infos {
+  margin-left: 1rem;
+  color: #E7E8E9;
+}
+.skills__language {
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 .skills__text {
   padding-top: 1rem;
-  font-size: 1.5rem;
-  color: #E7E8E9;
-  text-transform: uppercase;
-  text-align: center;
-}
-.skills__img {
-  width: 4.5rem;
-  height: 4.5rem;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  letter-spacing: 0.5px;
 }
 
 .portfolio__container {
