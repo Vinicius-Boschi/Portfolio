@@ -34,4 +34,10 @@ let projects = [
     image: "images/projects/doctorcare.jpg",
     text: "doctor care"
   },
+  
+  {
+    link: "https://pokedexapipokemon.netlify.app/",
+    image: "images/projects/pokedex.jpg",
+    text: "pokedex"
+  }
 ]
