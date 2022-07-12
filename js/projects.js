@@ -39,5 +39,15 @@ let projects = [
     link: "https://pokedexapipokemon.netlify.app/",
     image: "images/projects/pokedex.jpg",
     text: "pokedex"
+  },
+  {
+    link: "https://adopetalura.netlify.app/",
+    image: "images/projects/adopet.jpg",
+    text: "AdoPet Alura"
+  },
+  {
+    link: "https://dashboardstarwars.netlify.app/",
+    image: "images/projects/em-breve.jpg",
+    text: "Star Wars"
   }
 ]
