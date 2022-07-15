@@ -47,7 +47,7 @@ let projects = [
   },
   {
     link: "https://dashboardstarwars.netlify.app/",
-    image: "images/projects/em-breve.jpg",
+    image: "images/projects/star-wars.jpg",
     text: "Star Wars"
   }
 ]
