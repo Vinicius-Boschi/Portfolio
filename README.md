@@ -8,7 +8,7 @@
 O objetivo deste site é conter todas as informações sobre mim, como, redes socias, projetos, sobre mim.
 
 2. Seção Inicial<br><br>
-![home](https://user-images.githubusercontent.com/74377158/178609127-05c6bee7-2f35-40a9-bf1c-133d9b9323b5.jpg)
+![home](https://user-images.githubusercontent.com/74377158/179576476-e38f2b92-c12a-4f88-9672-7b5af30c7558.jpg)
 
 3. Tecnologia usadas: <br>
 
