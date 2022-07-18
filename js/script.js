@@ -1,3 +1,5 @@
+import { projects } from './projects.js'
+
 // Data.
 const date = document.getElementById("date")
 date.innerHTML = new Date().getFullYear() // Mostra o ano atual.
@@ -47,6 +49,7 @@ typeWrite(tittle) // Mostrará na tela.
 let button = document.querySelector(".header__button")
 let linksContainer = document.querySelector(".header__links-container")
 let links = document.querySelector(".header__list")
+let burguer = document.querySelector(".header__burger")
 
 button.addEventListener("click", function() {
   const containerHeight = linksContainer.getBoundingClientRect().height // Mostra o height atual dos links.
@@ -58,6 +61,14 @@ button.addEventListener("click", function() {
     linksContainer.style.height = 0 // Se não ele recolhe tudo.
   }
 }) 
+
+burguer.addEventListener("click", function() {
+  if(!burguer.classList.contains("open")) {
+    burguer.classList.add("open")
+  } else {
+    burguer.classList.remove("open")
+  }
+})
 
 // Navbar Fixa.
 

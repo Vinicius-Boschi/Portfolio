@@ -1,4 +1,4 @@
-let projects = [
+export let projects = [
   {
     link: "https://buscarceps.netlify.app/",
     image: "images/projects/cep.jpg",

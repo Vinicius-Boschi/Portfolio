@@ -20,7 +20,7 @@ $fontRoboto: 'Roboto', sans-serif;
 }
 
 /* Importa os outros arquivos de estilização da página */
-@import 'header', 'about', 'skills', 'portfolio', 'button', 'animation' ,'footer'; 
+@import 'header', 'navButton', 'about', 'skills', 'portfolio', 'button', 'animation' ,'footer'; 
 
 html,body {
     font-family: 'Arima', cursive;

@@ -47,36 +47,19 @@
 .header__logo {
   height: 100px;
 }
-.header__button {
-  display: none;
-  font-size: 1.5rem;
-  color: #E7E8E9;
-  background: transparent;
-  border-color: transparent;
-  transition: all 0.3s linear;
-  cursor: pointer;
-}
-@media (min-width: 375px) and (max-width: 540px) {
-  .header__button {
-    display: block;
-  }
-}
-@media (min-width: 541px) and (max-width: 999px) {
-  .header__button {
-    display: block;
-  }
-}
 .header__links-container {
   transition: all 0.3s linear;
 }
 @media (min-width: 375px) and (max-width: 540px) {
   .header__links-container {
     overflow: hidden;
+    height: 0;
   }
 }
 @media (min-width: 541px) and (max-width: 999px) {
   .header__links-container {
     overflow: hidden;
+    height: 0;
   }
 }
 .header__list {
@@ -188,6 +171,81 @@
 .header__btn:hover::after {
   opacity: 1;
   transform: scale(1.15);
+}
+
+.header__button {
+  display: none;
+  color: #E7E8E9;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+@media (min-width: 375px) and (max-width: 540px) {
+  .header__button {
+    display: block;
+  }
+}
+@media (min-width: 541px) and (max-width: 999px) {
+  .header__button {
+    display: block;
+  }
+}
+.header__burger {
+  height: 3em;
+  width: 3em;
+  position: relative;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.header__burger .header__burger-lines {
+  top: 50%;
+}
+.header__burger .header__burger-lines::after {
+  left: 0;
+  top: -1em;
+}
+.header__burger .header__burger-lines::before {
+  left: 1em;
+  top: 1em;
+}
+.header__burger .header__burger-lines, .header__burger .header__burger-lines::after, .header__burger .header__burger-lines::before {
+  pointer-events: none;
+  display: block;
+  content: "";
+  width: 75%;
+  border-radius: 0.25em;
+  background-color: white;
+  height: 0.25em;
+  position: absolute;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+.header__burger.burguer-slip .header__burger-lines::after, .header__burger.burguer-slip .header__burger-lines::before {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.header__burger.burger-slip.open .header__burger-lines {
+  -webkit-transform: translateX(-2em);
+  -ms-transform: translateX(-2em);
+  transform: translateX(-2em);
+  background-color: transparent;
+}
+.header__burger.burger-slip.open .header__burger-lines::before, .header__burger.burger-slip.open .header__burger-lines::after {
+  left: 0.5em;
+  top: 0;
+}
+.header__burger.burger-slip.open .header__burger-lines::before {
+  -webkit-transform: translateX(2em) rotate(135deg);
+  -ms-transform: translateX(2em) rotate(135deg);
+  transform: translateX(2em) rotate(135deg);
+}
+.header__burger.burger-slip.open .header__burger-lines::after {
+  -webkit-transform: translateX(2em) rotate(-135deg);
+  -ms-transform: translateX(2em) rotate(-135deg);
+  transform: translateX(2em) rotate(-135deg);
 }
 
 .about__container {

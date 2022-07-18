@@ -47,33 +47,17 @@
         height: 100px;
     }
 
-    &__button {
-        display: none;
-        font-size: 1.5rem;
-        color: $white;
-        background: transparent;
-        border-color: transparent;
-        transition: all .3s linear;
-        cursor: pointer;
-
-        @include for-phone-only {
-            display: block;
-        }
-
-        @include for-tablet-only {
-            display: block;
-        }
-    }
-
     &__links-container {
         transition: all .3s linear;
 
         @include for-phone-only {
             overflow: hidden;
+            height: 0;
         }
 
         @include for-tablet-only {
             overflow: hidden;
+            height: 0;
         }
     }
     
