@@ -144,24 +144,50 @@
   padding: 1rem;
   color: #E7E8E9;
 }
+.header__wrapper a {
+  color: #E7E8E9;
+}
 .header__social {
   display: flex;
   justify-content: center;
   transition: all 0.3s;
 }
-.header__social :hover {
-  transform: scale(1.1);
+.header__btn {
+  font-size: 2rem;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  margin: 1rem 0.5rem 0rem 0rem;
+  width: 80px;
+  height: 80px;
+  line-height: 84px;
+  border-radius: 50%;
+  position: relative;
+  color: #E7E8E9;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 300ms;
 }
-.header__github, .header__codepen, .header__linkedin, .header__email {
-  width: 4.5rem;
-  margin-top: 2rem;
-  padding: 1rem;
-  border-radius: 1.8rem;
+.header__btn::after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  box-sizing: content-box;
+  box-shadow: 0 0 0 3px #E7E8E9;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 300ms;
 }
-@media (min-width: 375px) and (max-width: 540px) {
-  .header__github, .header__codepen, .header__linkedin, .header__email {
-    width: 3rem;
-  }
+.header__btn:hover {
+  background-color: #E7E8E9;
+  color: #1E1E1E;
+}
+.header__btn:hover::after {
+  opacity: 1;
+  transform: scale(1.15);
 }
 
 .about__container {
