@@ -64,10 +64,10 @@
     &__badges {
         display: flex;
         align-items: center;
-        padding: 1rem;
+        padding: 2rem;
         position: relative;
-        width: 60%;
-        height: 5rem;
+        width: 70%;
+        height: auto;
         margin: 0.5rem;
         border-radius: 25px;
         background-color: $light-gray;
@@ -104,6 +104,15 @@
 
         .ts::before {
             background: $ts;
+        }
+
+        @include for-phone-only {
+            width: 80%;
+        }
+
+        @include for-tablet-only {
+            width: 90%;
+            height: auto;
         }
     }
 

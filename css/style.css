@@ -405,10 +405,10 @@
 .skills__badges {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   position: relative;
-  width: 60%;
-  height: 5rem;
+  width: 70%;
+  height: auto;
   margin: 0.5rem;
   border-radius: 25px;
   background-color: #1E1E1EEA;
@@ -439,6 +439,17 @@
 }
 .skills__badges .ts::before {
   background: #007ACC;
+}
+@media (min-width: 375px) and (max-width: 540px) {
+  .skills__badges {
+    width: 80%;
+  }
+}
+@media (min-width: 541px) and (max-width: 999px) {
+  .skills__badges {
+    width: 90%;
+    height: auto;
+  }
 }
 .skills__badges .skills__card::before {
   content: "";
