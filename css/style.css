@@ -405,25 +405,54 @@
 .skills__badges {
   display: flex;
   align-items: center;
-  width: 20vw;
-  height: auto;
-  border-radius: 0.4rem;
-  border: 1px solid #233F6A;
   padding: 1rem;
+  position: relative;
+  width: 60%;
+  height: 5rem;
+  margin: 0.5rem;
+  border-radius: 25px;
+  background-color: #1E1E1EEA;
+  overflow: hidden;
+  transition: 0.5s;
 }
-@media (min-width: 375px) and (max-width: 540px) {
-  .skills__badges {
-    width: 100%;
-  }
+.skills__badges::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  background: #0C0B0E;
+  border-radius: 20px;
 }
-@media (min-width: 541px) and (max-width: 999px) {
-  .skills__badges {
-    width: 90%;
-  }
+.skills__badges .html::before {
+  background: #FC4503;
+}
+.skills__badges .css::before {
+  background: #1572B6;
+}
+.skills__badges .sass::before {
+  background: #9C5076;
+}
+.skills__badges .js::before {
+  background: #F0DB4F;
+}
+.skills__badges .vue::before {
+  background: #41B883;
+}
+.skills__badges .ts::before {
+  background: #007ACC;
+}
+.skills__badges .skills__card::before {
+  content: "";
+  position: absolute;
+  width: 6rem;
+  left: 4.5rem;
+  top: -50%;
+  height: 50rem;
+  animation: bars 10s linear 0s infinite;
 }
 .skills__img {
   width: 2.5rem;
   height: auto;
+  z-index: 1;
 }
 .skills__bars {
   margin-left: 1vw;
@@ -431,6 +460,7 @@
   width: 0.4rem;
   border-radius: 0.37rem;
   background-color: #233F6A;
+  z-index: 1;
 }
 @media (min-width: 375px) and (max-width: 540px) {
   .skills__bars {
@@ -440,6 +470,7 @@
 .skills__infos {
   margin-left: 1rem;
   color: #E7E8E9;
+  z-index: 1;
 }
 .skills__language {
   text-transform: uppercase;
@@ -686,6 +717,15 @@ html, body {
 .hide-preloader {
   z-index: 999;
   visibility: hidden;
+}
+
+@keyframes bars {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(350deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
