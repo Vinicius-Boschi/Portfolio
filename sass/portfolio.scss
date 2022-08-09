@@ -1,97 +1,130 @@
 .portfolio {
-    
-    &__container {
-        background-color: $dark-gray;
-        height: auto;
-        padding: 1rem;
-    }
+    background: $dark-gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    &__h2 {
-        text-align: center;
+    &__title {
+        text-align: center; 
         font-family: $fontRoboto;
         font-size: 1.8rem;
-        color: $white;
-        padding-top: 1rem;
+        color: #E7E8E9;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
     }
 
-    &__projects {
+    &__infos {
         display: grid;
-        align-items: center;
-        grid-template-areas: 
-        "portfolio__img";
         grid-template-columns: repeat(3, 1fr);
-        padding: 1.5rem 2.5rem;
-
-       @include for-phone-only {
-            grid-template-columns: repeat(2, 1fr);
-            padding: 1rem;
+        gap: 3rem;
+    
+        @include for-phone-only {
+          grid-template-columns: repeat(1, 1fr);
         }
-
+    
         @include for-tablet-only {
-            grid-template-columns: repeat(2, 1fr);
-            padding: 1rem;
+          grid-template-columns: repeat(1, 1fr);
         }
     }
 
-    &__link {
-        text-decoration: none;
+    &__content {
+        width: 300px;
+        height: 400px;
+        background: #000;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        backface-visibility: hidden;
+        margin-bottom: 1rem;
+        border: 2px solid #E7E8E9;
+        
+        &:hover {
+          transform: translateY(-10px) scale(1);
+          box-shadow: 5px 5px $white;
+        }
+        
+        &::after {
+          width: 100%;
+          content: '';
+          left: 0px;
+          bottom: 0px;
+          height: 150px;
+          position: absolute;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1));
+          z-index: 20;
+          transition: all 0.25s ease;
+        }
+        
+        &:hover::after {
+          height: 280px;
+        }
     }
 
     &__img {
-        border-radius: .5rem;    
-        box-shadow: 0 0.3rem 0.6rem $dark-gray;
-        border: 1px solid $white;
-        width: 25vh;
-        transition: 1s;
+        height: 100%;
+        z-index: 10;
+        transition: all 0.25s ease;
         
         &:hover {
-            box-shadow: 5px 5px $white;
-            transform: translateY(-10px) scale(1);
+          transform: scale(1.25);
         }
+    }
 
-        @include for-phone-only {
-            width: 20vh;
-        }
+    &__container {
+        z-index: 30;
+        position: absolute;
+        bottom: 0px;
+        color: $white;
+        padding: 20px;
+        padding-bottom: 30px;
+    }
 
-        @include for-tablet-only {
-            width: 30vh;
-        }
+    &__h2 {
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 2;
+        text-transform: capitalize;
+        margin-top: -1rem;
     }
 
     &__text {
-        color: $white;
-        font-size: 1.2rem;
-        padding-top: 1rem;
-        text-transform: capitalize;
-
-        @include for-phone-only {
-            font-size: 1rem;
-        }
+        font-size: 0.8rem;
+        opacity: 0;
+        margin-bottom: -170px;
+        transition: all 0.25s ease;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
     }
 
-    &__load {
-        display: flex;
-        background: $medium-blue;
-        border: 2px solid $white;
-        border-radius: 5px;
-        color: $white;
-        padding: .5rem;
-        margin: 0 auto;
-        transition: 1s;
-        
+    &__content:hover &__container &__text {
+        margin-bottom: 0px;
+        opacity: 1;
+    }
+
+    &__input {
+        padding: 7px 17px;
+        border-radius: 12px;
+        background: transparent;
+        border: 2px solid #FFFFFF;
+        color: #FFFFFF;
+        margin-top: 10px;
+        margin-left: auto;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        font-size: 0.75rem;
+        outline: none;
+          
         &:hover {
-            cursor: pointer;
-            box-shadow: 0 0.5rem 0.5rem -0.4rem $medium-blue;
-            transform: translateY(-0.50em);
-            background-color: $button-hover;
-        }
-
-        @include for-phone-only {
-            width: auto;
-        }
-
-        @include for-tablet-only {
-            width: auto;
+          background: #FFFFFF;
+          color: #000000;
         }
     }
 }
