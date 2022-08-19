@@ -28,17 +28,17 @@ export let projects = [
   },
 
   {
-    link: "https://descubrasuageracao.netlify.app/",
-    image: "https://user-images.githubusercontent.com/74377158/181602517-25d0f673-9c54-403d-93dd-6e49fb7c7ad0.jpg",
-    name: "descubra sua geração",
-    text: "Projeto que mostra sua geração de acordo com sua idade, podendo ser ela Baby Boomer, X, Millennials, Z e Alpha."
+    link: "https://github.com/Vinicius-Boschi/DoguitoPet-Shop",
+    image: "https://user-images.githubusercontent.com/74377158/185706080-c4a50c29-624c-470a-8586-6a91472ea0d4.jpg",
+    name: "doguito pet shop",
+    text: "Site de pet shop que busca mostrar os conceitos do crud. Podendo cadastrar no site, cadastrar cliente na lista, editar e excluir."
   },
 
   {
-    link: "https://doctorscare.netlify.app/",
-    image: "https://user-images.githubusercontent.com/74377158/181602236-fbcd5e60-1b25-444e-b2e2-690f6c8ba2ed.jpg",
-    name: "doctor care",
-    text: "Projeto da RocketSeat feito para treinar programação. Um site de assistência médica, podendo marcar sua consulta."
+    link: "https://github.com/Vinicius-Boschi/Boschis-Tech",
+    image: "https://user-images.githubusercontent.com/74377158/184989025-5d3fc441-be27-495f-98c1-278c7d7e8f6b.jpg",
+    name: "boschi's tech",
+    text: "Site para organizar a vida financeira podendo adicionar os gasto e editar eles como quiser."
   },
   
   {

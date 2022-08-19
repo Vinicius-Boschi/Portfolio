@@ -533,7 +533,6 @@
   overflow: hidden;
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.25s ease;

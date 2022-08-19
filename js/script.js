@@ -9,7 +9,17 @@ let projectsPortfolio = document.querySelector(".portfolio__infos")
 
 function showProjects() {
   for (let i = 0; i < projects.length; i++) { 
-    projectsPortfolio.innerHTML += "<div class='portfolio__content'>" + "<img class='portfolio__img' src='" + projects[i].image + "'>" + "<div class='portfolio__container'>" + "<h2 class='portfolio__h2'>" + projects[i].name + "</h2>" + "<p class='portfolio__text'>" + projects[i].text + "<input type='submit' value='Ir para o projeto' class='portfolio__input' onclick=location.href='" + projects[i].link + "'>" + "</p>" + "</div>" + "</div>"
+    projectsPortfolio.innerHTML += `
+    <div class='portfolio__content'>
+      <a href=${projects[i].link} target=_blank>
+        <img class='portfolio__img' src='${projects[i].image}'>
+      </a>
+      <div class='portfolio__container'>
+        <h2 class='portfolio__h2'>${projects[i].name}</h2>
+        <p class='portfolio__text'>${projects[i].text}</p>
+      </div>
+    </div>
+  `
   }
 }
 
