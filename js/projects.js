@@ -60,5 +60,12 @@ export let projects = [
     image: "https://user-images.githubusercontent.com/74377158/181092726-cf0b5406-1326-4b00-8212-66be228aff16.jpg",
     name: "star wars",
     text: "Projeto feito para conter todas as informações do mundo do Star Wars e também aprendendo a usar o axios()."
+  },
+
+  {
+    link: "https://replicaofnetflix.netlify.app/",
+    image: "https://user-images.githubusercontent.com/74377158/187551815-6a7bf0aa-2fb8-475e-99cc-1c50753bbcc4.jpg",
+    name: "clone netflix",
+    text: "Projeto do 7 days of code da Alura, que consiste em replicar o famoso site da Netflix."
   }
 ]
