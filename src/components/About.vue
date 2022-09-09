@@ -1,31 +1,32 @@
 <template>
 <section class="about" id="about">
-			<div class="about__container" data-aos="fade-right" data-aos-duration="2000">
-                <div class="about__h2">
-                    <h2>Sobre mim...</h2>
-                </div>
-				<div class="about__info">
-                    <div class="about__my">
-                        <img class="about__picture" src="https://bitbucket.org/vinicius-boschi/portfolio/raw/fc9fbd53087b9c720c69cc3a0c0adb9e9c1b62e0/images/aboutMe.png" :alt="myPhoto">
-                    </div>
-                    <div class="about__informations">
-                        <p class="about__text">{{ textAboutMe }}</p> 
-                        <p class="about__text">{{ textCourses }}</p>
-                    </div>
-				</div>
-                <div class="animation">
-                    <p class="animation__scroll">Scroll Down</p>   
-                    <span class="animation__mouse">
-                      <span class="animation__mouse-wheel"></span>
-                    </span>
-                </div>
+    <div class="about__container" data-aos="fade-right" data-aos-duration="2000">
+        <div class="about__h2">
+            <h2>Sobre mim...</h2>
+        </div>
+        <div class="about__info">
+           <div class="about__my">
+                <img class="about__picture" src="https://bitbucket.org/vinicius-boschi/portfolio/raw/fc9fbd53087b9c720c69cc3a0c0adb9e9c1b62e0/images/aboutMe.png" :alt="myPhoto">
             </div>
-        </section>
+            <div class="about__informations">
+                <p class="about__text">{{ textAboutMe }}</p> 
+                <p class="about__text">{{ textCourses }}</p>
+            </div>
+        </div>
+        <Animation />
+    </div>
+</section>
 </template>
 
 <script>
+
+    import Animation from './Animation.vue'
+
     export default {
         name: "About",
+        components: {
+            Animation
+        },
         data() {
             return {
                 myPhoto: 'Logo Portfólio',

@@ -18,7 +18,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 4rem;
+        padding: 2.5rem;
 
         &__scroll {
             color: #E7E8E9;
