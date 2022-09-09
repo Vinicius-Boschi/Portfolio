@@ -1,0 +1,26 @@
+$white: #E7E8E9;
+$medium-blue: #394E6D;
+$button-hover: #1A293F;
+$background: #233F6A;
+$light-gray: #1E1E1EEA;
+$dark-gray: #1E1E1E;   
+$dark-gray-two: rgba(255, 255, 255, 0.1);
+$background-skills: #0C0B0E;
+$black: #040E16D4;
+$black-two: #00000070;
+$html: #FC4503;
+$css: #1572B6;
+$sass: #9C5076;
+$js: #F0DB4F;
+$vue:#41B883;
+$ts: #007ACC;
+$light-shadow: 0 5px 15px #0000001A; 
+$fontRoboto: 'Roboto', sans-serif;
+
+@mixin for-phone-only {
+    @media (min-width: 375px) and (max-width: 540px) { @content; }
+}
+
+@mixin for-tablet-only {
+    @media (min-width: 541px) and (max-width: 999px) { @content; }
+}
