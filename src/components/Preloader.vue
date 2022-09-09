@@ -1,13 +1,12 @@
 <template>
     <div class="preloader">
-        <img :src="preloader" :alt="alt">
+        <img src="https://bitbucket.org/vinicius-boschi/portfolio/raw/fc9fbd53087b9c720c69cc3a0c0adb9e9c1b62e0/images/video/preloader.gif" :alt="alt">
     </div>
 </template>
 
 <script>
     export default {
-       name: 'Preloader',
-       props: ["preloader", "alt"]
+       name: 'Preloader'
     }
 </script>
 

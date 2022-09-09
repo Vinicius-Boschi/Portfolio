@@ -3,7 +3,7 @@
         <div class="header__container">
             <nav class="header__navbar" role="navigation">
                 <div class="header__action">
-                    <img class="header__logo" :src="aboutMe" :alt="aboutMeText">
+                    <img class="header__logo" src="https://bitbucket.org/vinicius-boschi/portfolio/raw/fc9fbd53087b9c720c69cc3a0c0adb9e9c1b62e0/images/aboutMe.png" :alt="aboutMeText">
                     <button class="header__button">
                         <div class="header__burger burger-slip">
                             <div class="header__burger-lines"></div>
@@ -52,7 +52,6 @@
             myName: 'Vinícius',
             lastName: 'Boschi',
             job: 'Desenvolvedor Front-end.',
-            aboutMe: '/img/aboutMe.png',
             aboutMeText: 'Logo Portfólio',
 
             items: [{message: 'home', link:'#home'}, 

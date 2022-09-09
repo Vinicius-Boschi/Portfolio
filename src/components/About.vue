@@ -6,7 +6,7 @@
                 </div>
 				<div class="about__info">
                     <div class="about__my">
-                        <img class="about__picture" :src="aboutMe" :alt="myPhoto">
+                        <img class="about__picture" src="https://bitbucket.org/vinicius-boschi/portfolio/raw/fc9fbd53087b9c720c69cc3a0c0adb9e9c1b62e0/images/aboutMe.png" :alt="myPhoto">
                     </div>
                     <div class="about__informations">
                         <p class="about__text">{{ textAboutMe }}</p> 
@@ -28,7 +28,6 @@
         name: "About",
         data() {
             return {
-                aboutMe: '/img/aboutMe.png',
                 myPhoto: 'Logo Portfólio',
                 textAboutMe: 'Olá! Sou o Vinícius, tenho 20 anos, sou programador front-end e estou determinado a aprender cada vez mais sobre a área para me tornar um excelente profissional.',
                 textCourses: 'Comecei na área da programação em 2018, fazendo um curso de Lógica de Programação na Caelum, em 2019 entrei no curso técnico, em 2021 comecei a fazer os cursos da Alura e atualmente estou cursando Análise e Desenvolvimento de Sistemas na Fiap.'
