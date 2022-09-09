@@ -28,7 +28,7 @@
         name: "About",
         data() {
             return {
-                aboutMe: '/public/img/aboutMe.png',
+                aboutMe: '/img/aboutMe.png',
                 myPhoto: 'Logo Portfólio',
                 textAboutMe: 'Olá! Sou o Vinícius, tenho 20 anos, sou programador front-end e estou determinado a aprender cada vez mais sobre a área para me tornar um excelente profissional.',
                 textCourses: 'Comecei na área da programação em 2018, fazendo um curso de Lógica de Programação na Caelum, em 2019 entrei no curso técnico, em 2021 comecei a fazer os cursos da Alura e atualmente estou cursando Análise e Desenvolvimento de Sistemas na Fiap.'

@@ -52,7 +52,7 @@
             myName: 'Vinícius',
             lastName: 'Boschi',
             job: 'Desenvolvedor Front-end.',
-            aboutMe: '/public/img/aboutMe.png',
+            aboutMe: '/img/aboutMe.png',
             aboutMeText: 'Logo Portfólio',
 
             items: [{message: 'home', link:'#home'}, 
