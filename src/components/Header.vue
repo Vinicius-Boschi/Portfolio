@@ -47,7 +47,7 @@
             lastName: 'Boschi',
             job: 'Desenvolvedor Front-end.',
             aboutMeText: 'Logo Portfólio',
-            imgLogo: 'https://bitbucket.org/vinicius-boschi/portfolio/raw/fc9fbd53087b9c720c69cc3a0c0adb9e9c1b62e0/images/aboutMe.png',
+            imgLogo: 'https://user-images.githubusercontent.com/74377158/189500044-8adb5436-3a19-42c0-8981-8472de0fb2b2.png',
 
             items: [{message: 'home', link:'#home'}, 
                     {message: 'sobre',link:'#about'},

@@ -30,7 +30,7 @@
         data() {
             return {
                 myPhoto: 'Logo Portfólio',
-                imgLogo: 'https://bitbucket.org/vinicius-boschi/portfolio/raw/fc9fbd53087b9c720c69cc3a0c0adb9e9c1b62e0/images/aboutMe.png',
+                imgLogo: 'https://user-images.githubusercontent.com/74377158/189500044-8adb5436-3a19-42c0-8981-8472de0fb2b2.png',
                 textAboutMe: 'Olá! Sou o Vinícius, tenho 20 anos, sou programador front-end e estou determinado a aprender cada vez mais sobre a área para me tornar um excelente profissional.',
                 textCourses: 'Comecei na área da programação em 2018, fazendo um curso de Lógica de Programação na Caelum, em 2019 entrei no curso técnico, em 2021 comecei a fazer os cursos da Alura e atualmente estou cursando Análise e Desenvolvimento de Sistemas na Fiap.'
             }
