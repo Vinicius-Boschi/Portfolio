@@ -2,7 +2,9 @@
   <Preloader :preloader="logo_src" :alt="logo_name" />
   <Header />
   <About />
-
+  <Skills />
+  <Projects />
+  <Footer />
   <BackToTop />
 </template>
 
@@ -11,6 +13,9 @@
   import Preloader from './components/Preloader.vue'
   import Header from './components/Header.vue'
   import About from './components/About.vue'
+  import Skills from './components/Skills.vue'
+  import Projects from './components/Projects.vue'
+  import Footer from './components/Footer.vue'
   import BackToTop from './components/BackToTop.vue'
 
   export default {
@@ -18,6 +23,9 @@
     Preloader,
     Header,
     About,
+    Skills,
+    Projects,
+    Footer,
     BackToTop
 },
     data() {
@@ -44,6 +52,10 @@
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css2?family=Arima&family=Roboto&display=swap');
+
+  * {
+    scroll-behavior: smooth;
+  }
 
   #app {
     font-family: "Arima", cursive;

@@ -3,7 +3,7 @@
         <div class="header__container">
             <nav class="header__navbar" role="navigation">
                 <div class="header__action">
-                    <img class="header__logo" src="https://bitbucket.org/vinicius-boschi/portfolio/raw/fc9fbd53087b9c720c69cc3a0c0adb9e9c1b62e0/images/aboutMe.png" :alt="aboutMeText">
+                    <img class="header__logo" :src="imgLogo" :alt="aboutMeText">
                     <button class="header__button">
                         <div class="header__burger burger-slip">
                             <div class="header__burger-lines"></div>
@@ -24,15 +24,7 @@
                 <h1>{{ myName }} <span class="header__">{{ lastName }}</span></h1>
                 <h3 class="header__effect">{{ job }}</h3>
             </div>
-            <div class="header__wrapper">
-                <ul class="header__social">
-                    <li v-for="links in social" :key="links.id">
-                        <a class="header__btn" :href="links.link" target="_blank">
-                            <i :class = "links.class"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <SocialMedia />
             <Animation />
         </div>
     </header>
@@ -41,11 +33,13 @@
 <script>
 
     import Animation from './Animation.vue'
+    import SocialMedia from './SocialMedia.vue'
 
     export default {
        name: 'Header',
        components: {
-        Animation
+        Animation,
+        SocialMedia
        },
        data() {
         return {
@@ -53,16 +47,12 @@
             lastName: 'Boschi',
             job: 'Desenvolvedor Front-end.',
             aboutMeText: 'Logo Portfólio',
+            imgLogo: 'https://bitbucket.org/vinicius-boschi/portfolio/raw/fc9fbd53087b9c720c69cc3a0c0adb9e9c1b62e0/images/aboutMe.png',
 
             items: [{message: 'home', link:'#home'}, 
                     {message: 'sobre',link:'#about'},
                     {message: 'habilidades', link:'#skills'},
-                    {message: 'projetos', link:'#projetos'}] ,
-
-            social: [{link: 'https://github.com/Vinicius-Boschi', class:'fa-brands fa-github'}, 
-                    {link: 'https://codepen.io/vinicius-simoes', class:'fa-brands fa-codepen'},
-                    {link: 'mailto:vinicius.yg@gmail.com', class:'fa-solid fa-envelope-open'},
-                    {link: 'https://www.linkedin.com/in/viniciusboschi/', class:'fa-brands fa-linkedin'}]
+                    {message: 'projetos', link:'#projetos'}]
         }
     },
     methods: {
@@ -102,9 +92,9 @@
                 const navHeight = navbar.getBoundingClientRect().height
 
                 if (scrollHeight > navHeight) {
-                    navbar.classList.add('.header__navbar-fixed')
+                    navbar.classList.add('header__navbar-fixed')
                 } else {
-                    navbar.classList.remove('.header__navbar-fixed')
+                    navbar.classList.remove('header__navbar-fixed')
                 }
 
                 if (scrollHeight > 500) {
@@ -129,7 +119,7 @@
 
     .header {
         min-height: 100vh;
-        background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url('../../public/img/header.jpeg') center/cover no-repeat;
+        background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url('/img/header.jpeg') center/cover no-repeat;
 
         &__container {
             background-color: $black; 
@@ -149,7 +139,7 @@
                 left: 0;
                 width: 100%;
                 background-color: $background;
-                box-shadow: 0 5px 15px $light-shadow;
+                box-shadow: $light-shadow;
                 z-index: 999 !important;
             }
 
@@ -342,12 +332,12 @@
 
         &__effect {
             box-shadow: .6em 0 0  $dark-gray-two;
-            margin: 2rem;
-	        width: 23ch;
+            margin: 2rem 0;
+	        width: 100%;
             font-size: 1.8rem;
             overflow: hidden;
 	        white-space: nowrap;
-	        animation: caret .5s step-end infinite alternate, type 6s steps(23, end);
+	        animation: caret .5s step-end infinite alternate, type 5s steps(23, end);
 
             @keyframes type {
                 0% {
@@ -359,60 +349,6 @@
                 50% {
                     box-shadow: .6em 0 0 transparent;
                 }
-            }
-
-        }
-
-        &__wrapper {
-            a {
-                color: $white;
-            }
-        }
-
-        &__social {
-            display: flex;
-            justify-content: center;
-            transition: all .3s;
-        }
-
-        &__btn {
-            font-size: 2rem;
-            text-align: center;
-            display: inline-block;
-            cursor: pointer;
-            margin: 1rem .5rem 0;
-            width: 80px;
-            height: 80px;
-            line-height: 84px;
-            border-radius: 50%;
-            position: relative;
-            color: $white;
-            background-color: $dark-gray-two;
-            transition: 300ms;
-
-            &::after {
-                pointer-events: none;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-                content: '';
-                box-sizing: content-box;
-                box-shadow: 0 0 0 3px $white;
-                top: 0;
-                left: 0;
-                opacity: 0;
-                transition: 300ms;
-            }
-
-            &:hover {
-                background: $white;
-                color: $dark-gray;
-            }
-
-            &:hover::after {
-                opacity: 1;
-                transform: scale(1.15);
             }
         }
     }

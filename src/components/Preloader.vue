@@ -23,7 +23,7 @@
         bottom: 0;
         background: #E7E8E9;
         z-index: 999;
-        transition: all 3s;
+        transition: all 2s;
     }
 
     .hide-preloader {
