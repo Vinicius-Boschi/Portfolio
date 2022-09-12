@@ -1,6 +1,6 @@
 <template>
     <div class="preloader">
-        <img src="https://bitbucket.org/vinicius-boschi/portfolio/raw/fc9fbd53087b9c720c69cc3a0c0adb9e9c1b62e0/images/video/preloader.gif" :alt="alt">
+        <img src="https://user-images.githubusercontent.com/74377158/189690859-9cdf317e-637c-47b1-9e8e-a3b1bbe14fae.gif" :alt="alt">
     </div>
 </template>
 

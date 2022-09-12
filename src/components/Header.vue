@@ -119,7 +119,7 @@
 
     .header {
         min-height: 100vh;
-        background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url('/img/header.jpeg') center/cover no-repeat;
+        background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url('https://user-images.githubusercontent.com/74377158/189690389-872f01c2-cfce-4654-965d-0846d5278db7.jpeg') center/cover no-repeat;
 
         &__container {
             background-color: $black; 
