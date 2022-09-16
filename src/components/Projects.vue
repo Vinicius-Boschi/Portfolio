@@ -37,8 +37,8 @@
                         text: "Projeto que mostra os filmes mais recentes lançados, também podendo favoritar/desfavoritar os filmes de acordo com o seu gosto. Utiliza-se o async fetch() para a requisição da api do The Movie Database."
                     },
                     {
-                        link: "https://playerofmusics.netlify.app/",
-                        image: "https://user-images.githubusercontent.com/74377158/181602614-afb8a293-156b-45d9-95e4-3c077f66f317.jpg",
+                        link: "https://climatempojs.herokuapp.com/",
+                        image: "https://user-images.githubusercontent.com/74377158/190726988-93f6028b-1de6-4ac3-8aaa-50ecc1529ba7.jpg",
                         name: "player de música",
                         text: "Projeto feito para similar ao Spotify, podendo pular, voltar, dar play e pause nas músicas."
                     },
