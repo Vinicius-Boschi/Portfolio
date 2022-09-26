@@ -14,7 +14,7 @@ Um  que foi feito para conter todas as minhas informações, mostrando minhas sk
 ![habilidades](https://user-images.githubusercontent.com/74377158/189500306-3829af99-5153-4943-bb3c-61698d842b92.jpg)
 
 # <h3> :pencil: Projetos</h3> 
-![projetos](https://user-images.githubusercontent.com/74377158/189500286-3565bedc-b8bd-4791-a95e-7fcf9b92dd66.png)
+![projetos](https://user-images.githubusercontent.com/74377158/192374305-a4c1c5b7-86ff-4615-b562-c91917fe2430.png)
 
 # <h3> :file_folder: Acessar o projeto</h3>
 Você pode acessar o projeto por este [site](https://portfolioviniciusboschi.herokuapp.com/).
