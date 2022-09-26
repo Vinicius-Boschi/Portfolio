@@ -1,6 +1,6 @@
 <template>
     <section class="portfolio" id="portfolio">
-        <div class="portfolio__title">Projetos Online</div>
+        <h1 class="portfolio__title">Projetos Online</h1>
         <div class="portfolio__infos">
             <div class="portfolio__content" v-for="project in projects" :key="project.id">
                 <img class="portfolio__img" :src="project.image" :alt="project.name">
@@ -39,14 +39,8 @@
                     {
                         link: "https://climatempojs.herokuapp.com/",
                         image: "https://user-images.githubusercontent.com/74377158/190726988-93f6028b-1de6-4ac3-8aaa-50ecc1529ba7.jpg",
-                        name: "player de música",
-                        text: "Projeto feito para similar ao Spotify, podendo pular, voltar, dar play e pause nas músicas."
-                    },
-                    {
-                        link: "https://weathercitys.netlify.app/",
-                        image: "https://user-images.githubusercontent.com/74377158/181602562-972e9d64-ee52-4098-a047-a92a3c88d5fd.jpg",
                         name: "climatempo",
-                        text: "Projeto de clima que mostra o clima da cidade de São Paulo por padrão, mas também pode mostrar o das outras cidades apenas pesquisando por elas no campo de pesquisa."
+                        text: "Projeto feito para mostrar o clima das cidades."
                     },
                     {
                         link: "https://github.com/Vinicius-Boschi/DoguitoPet-Shop",
@@ -99,126 +93,126 @@
         flex-direction: column;
         align-items: center;
 
-    &__title {
-        text-align: center; 
-        font-family: $fontRoboto;
-        font-size: 1.8rem;
-        color: #E7E8E9;
-        padding-top: 2rem;
-        margin-bottom: 2rem;
-    }
+        &__title {
+            text-align: center; 
+            font-family: $fontRoboto;
+            font-size: 1.8rem;
+            color: #E7E8E9;
+            padding-top: 2rem;
+            margin-bottom: 2rem;
+        }
 
-    &__infos {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
-    
-        @include for-phone-only {
-            grid-template-columns: repeat(1, 1fr);
+        &__infos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        
+            @include for-phone-only {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        
+            @include for-tablet-only {
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
-    
-        @include for-tablet-only {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
 
-    &__content {
-        width: 250px;
-        height: 300px;
-        background: #000;
-        border-radius: 20px;
-        overflow: hidden;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-        transition: all 0.25s ease;
-        backface-visibility: hidden;
-        margin-bottom: 1rem;
-        border: 2px solid #E7E8E9;
-        
-        &:hover {
-            transform: translateY(-10px) scale(1);
-            box-shadow: 5px 5px $white;
-        }
-        
-        &::after {
-            width: 100%;
-            content: '';
-            left: 0px;
-            bottom: 0px;
-            height: 150px;
-            position: absolute;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1));
-            z-index: 20;
+        &__content {
+            width: 250px;
+            height: 300px;
+            background: #000;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
             transition: all 0.25s ease;
-        }
-        
-        &:hover::after {
-            height: 280px;
-        }
-    }
-
-    &__img {
-        height: 100%;
-    }
-
-    &__container {
-        z-index: 30;
-        position: absolute;
-        bottom: 0px;
-        color: $white;
-        padding: 20px;
-        padding-bottom: 30px;
-    }
-
-    &__h2 {
-        color: $white;
-        font-size: 1.2rem;
-        font-weight: bold;
-        line-height: 2;
-        text-transform: capitalize;
-        margin-top: -1rem;
-    }
-
-    &__text {
-        font-size: 0.8rem;
-        opacity: 0;
-        margin-bottom: -170px;
-        transition: all 0.25s ease;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        flex-direction: column;
-    }
-
-    &__content:hover &__container &__text {
-        margin-bottom: 0px;
-        opacity: 1;
-    }
-
-    &__button {
-        padding: 7px 17px;
-        border-radius: 12px;
-        background: transparent;
-        border: 2px solid #FFFFFF;
-        color: #FFFFFF;
-        margin-top: 10px;
-        margin-left: auto;
-        cursor: pointer;
-        transition: all 0.25s ease;
-        font-size: 0.75rem;
-        outline: none;
+            backface-visibility: hidden;
+            margin-bottom: 1rem;
+            border: 2px solid #E7E8E9;
             
-        &:hover {
-            background: #FFFFFF;
-            color: #000000;
+            &:hover {
+                transform: translateY(-10px) scale(1);
+                box-shadow: 5px 5px $white;
+            }
+            
+            &::after {
+                width: 100%;
+                content: '';
+                left: 0px;
+                bottom: 0px;
+                height: 150px;
+                position: absolute;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1));
+                z-index: 20;
+                transition: all 0.25s ease;
+            }
+            
+            &:hover::after {
+                height: 280px;
+            }
         }
 
-        a {
-            text-decoration: none;
-            color: inherit;
+        &__img {
+            height: 100%;
         }
-    }
+
+        &__container {
+            z-index: 30;
+            position: absolute;
+            bottom: 0px;
+            color: $white;
+            padding: 20px;
+            padding-bottom: 30px;
+        }
+
+        &__h2 {
+            color: $white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            line-height: 2;
+            text-transform: capitalize;
+            margin-top: -1rem;
+        }
+
+        &__text {
+            font-size: 0.8rem;
+            opacity: 0;
+            margin-bottom: -170px;
+            transition: all 0.25s ease;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column;
+        }
+
+        &__content:hover &__container &__text {
+            margin-bottom: 0px;
+            opacity: 1;
+        }
+
+        &__button {
+            padding: 7px 17px;
+            border-radius: 12px;
+            background: transparent;
+            border: 2px solid #FFFFFF;
+            color: #FFFFFF;
+            margin-top: 10px;
+            margin-left: auto;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            font-size: 0.75rem;
+            outline: none;
+                
+            &:hover {
+                background: #FFFFFF;
+                color: #000000;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
 }
 </style>

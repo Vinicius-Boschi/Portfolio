@@ -1,61 +1,34 @@
 <template>
     <section class="skills" id="skills">
         <div>
-            <h2 class="skills__skills">Habilidades</h2>
+            <h2 class="skills__skills">{{ skills }}</h2>
         </div>
         <div class="skills__container">
             <div class="skills__experience">
-                <h2>Experiência</h2>
+                <h2>{{ experience }}</h2>
             </div>
             <div class="skills__list">
-                <div class="skills__badges">
-                    <span class="skills__card html"></span>
-                    <img class="skills__img" :src="HtmlImg">
+                <div class="skills__badges" v-for="item in infosExperience" :key="item.id">
+                    <span :class="item.class"></span>
+                    <img class="skills__img" :src="item.image">
                     <div class="skills__bars"></div>
                     <span class="skills__infos">
-                        <h3 class="skills__language">{{ HtmlName }}</h3>
-                        <p class="skills__text">{{ HtmlText }}</p>
-                    </span>
-                </div>
-                <div class="skills__badges">
-                    <span class="skills__card css"></span>
-                    <img class="skills__img" :src="CssImg">
-                    <div class="skills__bars"></div>
-                    <span class="skills__infos">
-                        <h3 class="skills__language">{{ CssName }}</h3>
-                        <p class="skills__text">{{ CssText }}</p>
-                    </span>
-                </div>
-                <div class="skills__badges">
-                    <span class="skills__card sass"></span>
-                    <img class="skills__img" :src="SassImg">
-                    <div class="skills__bars"></div>
-                    <span class="skills__infos">
-                        <h3 class="skills__language">{{ SassName }}</h3>
-                        <p class="skills__text">{{ SassText }}</p>
+                        <h3 class="skills__language">{{ item.name }}</h3>
+                        <p class="skills__text">{{ item.text }}</p>
                     </span>
                 </div>
             </div>
             <div class="skills__experience">
-                <h2>Aprendendo</h2>
+                <h2>{{ learning }}</h2>
             </div>
             <div class="skills__list">
-                <div class="skills__badges">
-                    <span class="skills__card js"></span>
-                    <img class="skills__img" :src="JsImg">
+                <div class="skills__badges" v-for="item in infosLearning" :key="item.id">
+                    <span :class="item.class"></span>
+                    <img class="skills__img" :src="item.image">
                     <div class="skills__bars"></div>
                     <span class="skills__infos">
-                        <h3 class="skills__language">{{ JsName }}</h3>
-                        <p class="skills__text">{{ JsText }}</p>
-                    </span>
-                </div>
-                <div class="skills__badges">
-                    <span class="skills__card vue"></span>
-                    <img class="skills__img" :src="VueImg">
-                    <div class="skills__bars"></div>
-                    <span class="skills__infos">
-                        <h3 class="skills__language">{{ VueName }}</h3>
-                        <p class="skills__text">{{ VueText }}</p>
+                        <h3 class="skills__language">{{ item.name }}</h3>
+                        <p class="skills__text">{{ item.text }}</p>
                     </span>
                 </div>
             </div>
@@ -75,21 +48,28 @@
         },
         data() {
             return {
-                HtmlName: 'html',
-                HtmlImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-                HtmlText: 'Linguagem de marcação para elementos em uma página web.',
-                JsName: 'js',
-                JsImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-                JsText: 'Linguagem de programação interpretada estruturada, de script em alto nível.',
-                SassName: 'sass',
-                SassImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg',
-                SassText: 'Linguagem de folhas de estilo concebida inicialmente por Hampton Catlin.',
-                CssName: 'css',
-                CssImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
-                CssText: 'Linguagem para adicionar estilo a um documento web.',
-                VueName: 'vue',
-                VueImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
-                VueText: 'Framework para desenvolvimento de interfaces de usuário e aplicativos de página única.'
+                skills: 'Habilidades',
+                experience: 'Experiência',
+                learning: 'Aprendendo',
+                infosExperience: [
+                    {
+                        name: 'html', class: 'skills__card html', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', text: 'Linguagem de marcação para elementos em uma página web.'
+                    },
+                    {
+                        name: 'sasss', class: 'skills__card sass', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg', text: 'Linguagem de folhas de estilo concebida inicialmente por Hampton Catlin.'
+                    },
+                    {
+                        name: 'css', class: 'skills__card css', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', text: 'Linguagem para adicionar estilo a um documento web.'
+                    }
+                ],
+                infosLearning: [
+                    {
+                        name: 'js', class: 'skills__card js', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', text: 'Linguagem de programação interpretada estruturada, de script em alto nível.'
+                    },
+                    {
+                        name: 'vuejs', class: 'skills__card vue', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg', text: 'Framework para desenvolvimento de interfaces de usuário e aplicativos de página única.'
+                    }
+                ]
             }
         }
     }

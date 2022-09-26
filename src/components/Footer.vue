@@ -1,9 +1,9 @@
 <template>
     <footer class="footer">
         <div class="footer__content">
-            <h3 class="footer__name">Vinícius<span class="footer__name_bold"> Boschi</span></h3>
-            <p class="footer__copy">&copy; <span id="date"></span> - Vinícius Boschi</p>
-            <p class="footer__rights">Todos os direitos reservados.</p>
+            <h3 class="footer__name">{{ name }} <span class="footer__name_bold">{{ lastName }}</span></h3>
+            <p class="footer__copy">&copy; <span id="date"></span> - {{ name }} {{ lastName }}</p>
+            <p class="footer__rights">{{ copyright }}</p>
         </div>
         <div class="footer__media">
             <SocialMedia />
@@ -20,6 +20,9 @@
         },
         data() {
             return {
+                name: 'Vinícius',
+                lastName: 'Boschi',
+                copyright: 'Todos os direitos reservados.',
                 dateTime() {
                     const date = document.getElementById("date")
                     date.innerHTML = new Date().getFullYear() 

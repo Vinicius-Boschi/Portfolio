@@ -1,6 +1,6 @@
 <template>
     <div class="animation">
-        <p class="animation__scroll">Scroll Dowm</p>
+        <p class="animation__scroll">{{ titleScroll }}</p>
         <span class="animation__mouse">
             <span class="animation__mouse-wheel"></span>
         </span>
@@ -9,7 +9,12 @@
 
 <script>
     export default {
-        name: 'Animation'
+        name: 'Animation',
+        data() {
+            return {
+                titleScroll: 'ScrollDown'
+            }
+        }
     }
 </script>
 

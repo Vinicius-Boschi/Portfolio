@@ -2,7 +2,7 @@
 <section class="about" id="about">
     <div class="about__container">
         <div class="about__h2">
-            <h2>Sobre mim...</h2>
+            <h2>{{ title }}</h2>
         </div>
         <div class="about__info">
            <div class="about__my">
@@ -29,6 +29,7 @@
         },
         data() {
             return {
+                title: 'Sobre mim...',
                 myPhoto: 'Logo Portfólio',
                 imgLogo: 'https://user-images.githubusercontent.com/74377158/189500044-8adb5436-3a19-42c0-8981-8472de0fb2b2.png',
                 textAboutMe: 'Olá! Sou o Vinícius, tenho 20 anos, sou programador front-end e estou determinado a aprender cada vez mais sobre a área para me tornar um excelente profissional.',
