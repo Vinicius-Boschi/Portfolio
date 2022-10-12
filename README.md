@@ -1,17 +1,18 @@
 <div align='center'>
-  <img src="https://user-images.githubusercontent.com/74377158/189500044-8adb5436-3a19-42c0-8981-8472de0fb2b2.png" width=300>
+  <img src="https://user-images.githubusercontent.com/74377158/195412928-b3a0843b-2ae2-4e92-9c94-db3f724a2f5c.png" width=200>
 </div>  
+
 # <h3> :dart: Objetivos do site</h3>
 Um  que foi feito para conter todas as minhas informações, mostrando minhas skills, projetos e sobre mim.
 
 # <h3> :pencil: Tela Inicial</h3>  
-![home](https://user-images.githubusercontent.com/74377158/179576476-e38f2b92-c12a-4f88-9672-7b5af30c7558.jpg)
+![home](https://user-images.githubusercontent.com/74377158/195432313-bbfc9cb4-bba0-4e4b-a2d9-db574e55622a.jpg)
 
 # <h3> :pencil: Sobre mim</h3> 
-![sobre-mim](https://user-images.githubusercontent.com/74377158/189500333-b8593936-95d9-4cd2-b035-6d7e0a5185df.jpg)
+![about](https://user-images.githubusercontent.com/74377158/195432307-f2b20dde-9d20-49bf-9a43-fab4e7f968d0.jpg)
 
 # <h3> :pencil: Habilidades</h3> 
-![habilidades](https://user-images.githubusercontent.com/74377158/189500306-3829af99-5153-4943-bb3c-61698d842b92.jpg)
+![skills](https://user-images.githubusercontent.com/74377158/195432314-c7c49fe7-f5b8-4270-a408-28664330692c.jpg)
 
 # <h3> :pencil: Projetos</h3> 
 ![projetos](https://user-images.githubusercontent.com/74377158/192374305-a4c1c5b7-86ff-4615-b562-c91917fe2430.png)
