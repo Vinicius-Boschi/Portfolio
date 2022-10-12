@@ -47,7 +47,7 @@
             lastName: 'Boschi',
             job: 'Desenvolvedor Front-end.',
             aboutMeText: 'Logo Portfólio',
-            imgLogo: 'https://user-images.githubusercontent.com/74377158/189500044-8adb5436-3a19-42c0-8981-8472de0fb2b2.png',
+            imgLogo: 'https://user-images.githubusercontent.com/74377158/195412928-b3a0843b-2ae2-4e92-9c94-db3f724a2f5c.png',
 
             items: [{message: 'home', link:'#home'}, 
                     {message: 'sobre',link:'#about'},

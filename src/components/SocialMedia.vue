@@ -79,6 +79,10 @@
                 opacity: 1;
                 transform: scale(1.15);
             }
+
+            @include for-phone-only {
+                width: 75px;
+            }
         }
     }
 </style>

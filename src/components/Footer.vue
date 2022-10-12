@@ -46,43 +46,48 @@
         color: $white;
         height: 15rem;
 
-    @include for-phone-only {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    &__name {
-        font-family: $fontRoboto;
-        font-size: 2rem;
-        padding: .5rem;
-        
-        &_bold {
-            font-weight: bold;
-        }
-    }
-
-    &__copy, &__rights {
-        font-size: .7rem;
-        padding: .5rem;
-    }
-
-    &__links {
-        text-decoration: none;
-    }
-
-    &__github, &__codepen, &__linkedin, &__email {
-        width: 2.5rem;
-        margin-top: 2rem;
-        padding: 1rem; 
-        border-radius: 1.8rem;
-
         @include for-phone-only {
-            width: 2rem;
+            flex-direction: column;
+            justify-content: center;
         }
 
-        &:hover {
-            transform: scale(1.1);
+        @include for-tablet-only {
+            flex-direction: column;
+            justify-content: center;
         }
-    }
+
+        &__name {
+            font-family: $fontRoboto;
+            font-size: 2rem;
+            padding: .5rem;
+            
+            &_bold {
+                font-weight: bold;
+            }
+        }
+
+        &__copy, &__rights {
+            font-size: .7rem;
+            padding: .5rem;
+        }
+
+        &__links {
+            text-decoration: none;
+        }
+
+        &__github, &__codepen, &__linkedin, &__email {
+            width: 2.5rem;
+            margin-top: 2rem;
+            padding: 1rem; 
+            border-radius: 1.8rem;
+
+            @include for-phone-only {
+                width: 2rem;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
 }
 </style>
