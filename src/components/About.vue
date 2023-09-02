@@ -32,7 +32,7 @@
                 title: 'Sobre mim...',
                 myPhoto: 'Logo Portfólio',
                 imgLogo: 'https://user-images.githubusercontent.com/74377158/195412928-b3a0843b-2ae2-4e92-9c94-db3f724a2f5c.png',
-                textAboutMe: 'Olá! Sou o Vinícius, tenho 20 anos, sou programador front-end e estou determinado a aprender cada vez mais sobre a área para me tornar um excelente profissional.',
+                textAboutMe: 'Olá! Sou o Vinícius, tenho 21 anos, sou programador front-end e estou determinado a aprender cada vez mais sobre a área para me tornar um excelente profissional.',
                 textCourses: 'Comecei na área da programação em 2018, fazendo um curso de Lógica de Programação na Caelum, em 2019 entrei no curso técnico, em 2021 comecei a fazer os cursos da Alura e atualmente estou cursando Análise e Desenvolvimento de Sistemas na Fiap.'
             }
         }

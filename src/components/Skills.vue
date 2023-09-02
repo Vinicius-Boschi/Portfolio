@@ -56,7 +56,7 @@
                         name: 'html', class: 'skills__card html', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', text: 'Linguagem de marcação para elementos em uma página web.'
                     },
                     {
-                        name: 'sasss', class: 'skills__card sass', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg', text: 'Linguagem de folhas de estilo concebida inicialmente por Hampton Catlin.'
+                        name: 'sass', class: 'skills__card sass', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg', text: 'Linguagem de folhas de estilo concebida inicialmente por Hampton Catlin.'
                     },
                     {
                         name: 'css', class: 'skills__card css', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', text: 'Linguagem para adicionar estilo a um documento web.'
@@ -67,7 +67,10 @@
                         name: 'js', class: 'skills__card js', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', text: 'Linguagem de programação interpretada estruturada, de script em alto nível.'
                     },
                     {
-                        name: 'vuejs', class: 'skills__card vue', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg', text: 'Framework para desenvolvimento de interfaces de usuário e aplicativos de página única.'
+                        name: 'vue js', class: 'skills__card vue', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg', text: 'Framework para desenvolvimento de interfaces de usuário e aplicativos de página única.'
+                    },
+                    {
+                        name: 'react', class: 'skills__card react', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', text: 'O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.'
                     }
                 ]
             }
@@ -180,6 +183,10 @@
 
         .vue::before {
             background: $vue;
+        }
+
+        .react::before {
+            background: $react;
         }
 
         @include for-phone-only {

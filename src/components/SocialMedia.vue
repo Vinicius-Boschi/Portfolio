@@ -45,7 +45,7 @@
             text-align: center;
             display: inline-block;
             cursor: pointer;
-            margin: 1rem .5rem 0;
+            margin: 1rem .3rem 0;
             width: 80px;
             height: 80px;
             line-height: 84px;

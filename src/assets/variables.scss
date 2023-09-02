@@ -13,11 +13,12 @@ $css: #1572B6;
 $sass: #9C5076;
 $js: #F0DB4F;
 $vue:#41B883;
+$react: #61DBFB;
 $light-shadow: 0 5px 15px #0000001A; 
 $fontRoboto: 'Roboto', sans-serif;
 
 @mixin for-phone-only {
-    @media (min-width: 375px) and (max-width: 540px) { @content; }
+    @media (min-width: 340px) and (max-width: 540px) { @content; }
 }
 
 @mixin for-tablet-only {
